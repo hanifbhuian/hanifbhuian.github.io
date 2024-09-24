@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "AboutAbout"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# AboutAbout
 I am currently pursuing an MSc (thesis-based) in Geomatics Engineering at the University of Calgary, with a full funding award. In addition to my studies, I serve as a graduate teaching (seasonal) and research assistant (current) at the university. I taught remote sensing courses lab to undergraduate students in the Department of Geomatics Engineering, and now working as a graduate research assistant in the Earth Observation for Environment Laboratory.
 
 My research focuses on early forest fire monitoring using active fire data in Canada, particularly in Alberta and the Northwest Territories. My areas of interest include geospatial analysis related to natural hazards, forest fires, weather and climate, and urban heat islands (UHI), utilizing GIS and remote sensing (RS) technology. I have published several research articles in notable journals such as Nature, Sustainable Cities and Societies, International Journal of Climatology, and Fire Journal.
