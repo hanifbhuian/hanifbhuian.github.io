@@ -21,7 +21,7 @@ repository               : "https://github.com/hanifbhuian/hanifbhuian.github.io
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Hanif.png"
+  avatar           : "profile.png"
   name             : "Hanif Bhuian"
   pronouns         :  "(He/Him)"  
   bio              : "Graduate Research Assistant || Wildfire, GIScience, and Remote Sensing"
