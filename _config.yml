@@ -22,11 +22,11 @@ repository               : "https://github.com/hanifbhuian/hanifbhuian.github.io
 author:
   # Biographic information
   avatar           : "Hanif.png"
-  name             : "Hanif Bhuian"
+  name             : "Hanif Bhuian, MSc"
   pronouns         :  "(He/Him)"  
   bio              : "Graduate Research Assistant || Wildfire, GIScience, and Remote Sensing"
   location         : "Calgary, AB"
-  employer         : #"Red Brick University"
+  employer         : "University of Calgary"
   uri              : # URL
   email            : #"none@example.org" 
 
