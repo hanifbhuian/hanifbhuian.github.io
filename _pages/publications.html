@@ -8,56 +8,36 @@ author_profile: true
 ---
 
 ## Journal Articles
-<ul>
 {% for publication in site.publications %}
   {% if publication.type == "Journal" %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a>
-    </li>
+    - [{{ publication.title }}]({{ publication.url }})
   {% endif %}
 {% endfor %}
-</ul>
 
 ## Conference Papers
-<ul>
 {% for publication in site.publications %}
   {% if publication.type == "Conference" %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a>
-    </li>
+    - [{{ publication.title }}]({{ publication.url }})
   {% endif %}
 {% endfor %}
-</ul>
 
 ## Books/Book Chapters
-<ul>
 {% for publication in site.publications %}
   {% if publication.type == "Books" %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a>
-    </li>
+    - [{{ publication.title }}]({{ publication.url }})
   {% endif %}
 {% endfor %}
-</ul>
 
 ## Conference Presentations
-<ul>
 {% for publication in site.publications %}
   {% if publication.type == "Presentations" %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a>
-    </li>
+    - [{{ publication.title }}]({{ publication.url }})
   {% endif %}
 {% endfor %}
-</ul>
 
 ## Unpublished
-<ul>
 {% for publication in site.publications %}
   {% if publication.type == "Unpublished" %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a>
-    </li>
+    - [{{ publication.title }}]({{ publication.url }})
   {% endif %}
 {% endfor %}
-</ul>
