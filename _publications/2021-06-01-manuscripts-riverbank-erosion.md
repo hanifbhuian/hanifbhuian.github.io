@@ -7,7 +7,7 @@ date: 2021-06-01
 paperurl: 'https://jnu.ac.bd/journal/assets/pdf/6_2_321.pdf'
 ---
 <p style="text-align: justify;">
-Authors: [**Shahana Akther**] (https://www.linkedin.com/in/shahana-akther-3a08a458/), [**Umme Saleh**], [**Md. Hanif Bhuian**](https://hanifbhuian.github.io/)
+Authors: [**Shahana Akther**](https://www.linkedin.com/in/shahana-akther-3a08a458/), [**Umme Saleh**](#), [**Md. Hanif Bhuian**](https://hanifbhuian.github.io/)
 <br>
 Abstract
 <br>
