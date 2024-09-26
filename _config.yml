@@ -77,7 +77,7 @@ author:
 publication_category:
   books:
     title: 'Books/Book Chapters'  # Added
-  manuscripts:
+  Journal:
     title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
