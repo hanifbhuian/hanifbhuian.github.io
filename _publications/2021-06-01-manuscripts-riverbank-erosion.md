@@ -1,5 +1,5 @@
 ---
-title: "RIVERBANK EROSION TREND ANALYSIS AND ITS IMPACT ON SOCIO-ECONOMIC CONDITION OF THE INHABITANTS OF ISLAMPUR UPAZILA IN JAMALPUR DISTRICT"
+title: "Riverbank Erosion Trend Analysis and Its Impact on Socio-Economic Condition of the Inhabitants of Islampur Upazila in Jamalpur District"
 collection: publications
 category: manuscripts
 type: "Journal"
