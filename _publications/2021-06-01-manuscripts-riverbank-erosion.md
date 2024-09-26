@@ -1,7 +1,8 @@
 ---
 title: "RIVERBANK EROSION TREND ANALYSIS AND ITS IMPACT ON SOCIO-ECONOMIC CONDITION OF THE INHABITANTS OF ISLAMPUR UPAZILA IN JAMALPUR DISTRICT"
 collection: publications
-type: Journal
+category: manuscripts
+type: "Journal"
 permalink: /publication/2021-06-01-manuscripts
 date: 2021-06-01
 paperurl: 'https://jnu.ac.bd/journal/assets/pdf/6_2_321.pdf'
