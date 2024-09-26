@@ -81,6 +81,8 @@ publication_category:
     title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
+  Presentations:
+    title: 'Conference Presentations'
   unpublished:
     title: 'Unpublished'  # Added
 
