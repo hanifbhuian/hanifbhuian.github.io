@@ -79,7 +79,7 @@ publication_category:
     title: 'Books/Book Chapters'  # Added
   Journal:
     title: 'Journal Articles'
-  conferences:
+  Conference:
     title: 'Conference Papers'
   Presentations:
     title: 'Conference Presentations'
