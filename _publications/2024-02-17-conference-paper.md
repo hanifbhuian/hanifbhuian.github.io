@@ -2,7 +2,6 @@
 title: "conference paper"
 collection: publications
 type: "Conference"
-permalink: /publication/2024-02-17-conference-paper.md
 date: 2024-02-17
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 ---
