@@ -51,15 +51,17 @@ author_profile: true
 </table>
 
 <script>
+  // Sorting function
   function sortTable(column, order) {
-    const table = document.getElementById('publicationsTable');
-    const rowsArray = Array.from(table.rows).slice(1);  // Get rows except the header
+    const table = document.getElementById('publicationsTable').tBodies[0]; // Reference tbody directly
+    const rowsArray = Array.from(table.rows); // Get all rows as an array
 
+    // Sort the rows array
     rowsArray.sort(function(a, b) {
       let cellA = a.cells[column].innerText || a.cells[column].textContent;
       let cellB = b.cells[column].innerText || b.cells[column].textContent;
 
-      if (column === 4) {  // If sorting by year, cast to number
+      if (column === 4) {  // If sorting by Year, cast to number
         cellA = parseInt(cellA);
         cellB = parseInt(cellB);
       }
@@ -71,6 +73,7 @@ author_profile: true
       }
     });
 
-    rowsArray.forEach(row => table.appendChild(row));  // Append sorted rows back to the table
+    // Re-append the sorted rows to the table body
+    rowsArray.forEach(row => table.appendChild(row));
   }
 </script>
