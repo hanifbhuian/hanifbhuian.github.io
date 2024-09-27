@@ -7,13 +7,58 @@ classes: wide
 author_profile: true
 ---
 
-<ul>
-  {% for publication in site.publications %}
-    <li>
-      <a href="{{ publication.url }}">{{ publication.title }}</a> - {{ publication.date | date: "%B %d, %Y" }}
-      {% if publication.paperurl %}
-        <a href="{{ publication.paperurl }}" target="_blank">[Download]</a>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+<h2>Publications (Total citation: {{ site.total_citations }})</h2>
+
+<!-- Sorting Buttons -->
+<button onclick="sortTable(0, 'asc')">Sort by Serial Ascending</button>
+<button onclick="sortTable(0, 'desc')">Sort by Serial Descending</button>
+<button onclick="sortTable(4, 'asc')">Sort by Year Ascending</button>
+<button onclick="sortTable(4, 'desc')">Sort by Year Descending</button>
+
+<!-- Table Structure -->
+<table id="publicationsTable">
+  <thead>
+    <tr>
+      <th>Serial</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Type</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+    {% assign i = 1 %}
+    {% for publication in sorted_publications %}
+    <tr>
+      <td>{{ i }}</td>
+      <td><a href="{{ publication.url }}">{{ publication.title }}</a>{% if publication.paperurl %} - <a href="{{ publication.paperurl }}" target="_blank">[Download]</a>{% endif %}</td>
+      <td>{{ publication.status | default: "Published" }}</td>
+      <td>{{ publication.type }}</td>
+      <td>{{ publication.date | date: "%Y" }}</td>
+    </tr>
+    {% assign i = i | plus: 1 %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+  // JavaScript for sorting table columns
+  function sortTable(column, order) {
+    const table = document.getElementById('publicationsTable');
+    const rows = Array.from(table.rows).slice(1);  // Get rows except the header
+
+    rows.sort(function(a, b) {
+      const cellA = a.cells[column].innerText;
+      const cellB = b.cells[column].innerText;
+
+      if (column === 4) {  // If sorting by year, cast to number
+        return order === 'asc' ? cellA - cellB : cellB - cellA;
+      } else {
+        return order === 'asc' ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+      }
+    });
+
+    rows.forEach(row => table.appendChild(row));  // Append sorted rows back to the table
+  }
+</script>
