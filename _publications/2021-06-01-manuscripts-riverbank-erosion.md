@@ -1,7 +1,7 @@
 ---
 title: "Riverbank Erosion Trend Analysis and Its Impact on Socio-Economic Condition of the Inhabitants of Islampur Upazila in Jamalpur District"
 collection: publications
-category: manuscripts
+category: Research Paper
 type: "Journal"
 permalink: /publication/2021-06-01-manuscripts
 date: 2021-06-01
