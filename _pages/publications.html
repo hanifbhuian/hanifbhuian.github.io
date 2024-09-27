@@ -15,8 +15,8 @@ author_profile: true
     <tr>
       <th>
         Serial 
-        <span onclick="sortTable(0, 'asc')">⬆️</span> 
-        <span onclick="sortTable(0, 'desc')">⬇️</span>
+        <span style="cursor: pointer;" onclick="sortTable(0, 'asc')">⬆️</span> 
+        <span style="cursor: pointer;" onclick="sortTable(0, 'desc')">⬇️</span>
       </th>
       <th>
         Title
@@ -29,8 +29,8 @@ author_profile: true
       </th>
       <th>
         Year 
-        <span onclick="sortTable(4, 'asc')">⬆️</span> 
-        <span onclick="sortTable(4, 'desc')">⬇️</span>
+        <span style="cursor: pointer;" onclick="sortTable(4, 'asc')">⬆️</span> 
+        <span style="cursor: pointer;" onclick="sortTable(4, 'desc')">⬇️</span>
       </th>
     </tr>
   </thead>
@@ -51,22 +51,26 @@ author_profile: true
 </table>
 
 <script>
-  // JavaScript for sorting table columns
   function sortTable(column, order) {
     const table = document.getElementById('publicationsTable');
-    const rows = Array.from(table.rows).slice(1);  // Get rows except the header
+    const rowsArray = Array.from(table.rows).slice(1);  // Get rows except the header
 
-    rows.sort(function(a, b) {
-      const cellA = a.cells[column].innerText;
-      const cellB = b.cells[column].innerText;
+    rowsArray.sort(function(a, b) {
+      let cellA = a.cells[column].innerText || a.cells[column].textContent;
+      let cellB = b.cells[column].innerText || b.cells[column].textContent;
 
       if (column === 4) {  // If sorting by year, cast to number
-        return order === 'asc' ? cellA - cellB : cellB - cellA;
+        cellA = parseInt(cellA);
+        cellB = parseInt(cellB);
+      }
+
+      if (order === 'asc') {
+        return cellA > cellB ? 1 : -1;
       } else {
-        return order === 'asc' ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+        return cellA < cellB ? 1 : -1;
       }
     });
 
-    rows.forEach(row => table.appendChild(row));  // Append sorted rows back to the table
+    rowsArray.forEach(row => table.appendChild(row));  // Append sorted rows back to the table
   }
 </script>
