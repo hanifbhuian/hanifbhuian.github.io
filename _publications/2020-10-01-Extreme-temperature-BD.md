@@ -3,6 +3,7 @@ title: "Extreme temperature and rainfall events in Bangladesh: A comparison betw
 collection: publications
 category: Research paper
 type: "Journal"
+permalink: /publications/Journal
 date: 2020-10-01
 paperurl: 'https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/joc.6911'
 ---
