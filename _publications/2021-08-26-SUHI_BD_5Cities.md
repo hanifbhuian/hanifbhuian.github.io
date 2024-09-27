@@ -8,7 +8,7 @@ date: 2021-08-01
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2210670721002122'
 ---
 <p style="text-align: justify;">
-Authors: Ashraf Dewan</a>, Grigory Kiselev, Dirk Botje, Golam Iftekhar Mahmud, Md. Hanif Bhuian, Quazi K. Hassan
+Authors: Ashraf Dewan, Grigory Kiselev, Dirk Botje, Golam Iftekhar Mahmud, Md. Hanif Bhuian, Quazi K. Hassan
 <br>
 Abstract
 <br>
