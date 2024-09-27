@@ -3,7 +3,7 @@ title: "Riverbank Erosion Trend Analysis and Its Impact on Socio-Economic Condit
 collection: publications
 category: Research Paper
 type: "Journal"
-date: 2021-06-01
+date: 2021-06
 paperurl: 'https://jnu.ac.bd/journal/assets/pdf/6_2_321.pdf'
 ---
 <p style="text-align: justify;">
