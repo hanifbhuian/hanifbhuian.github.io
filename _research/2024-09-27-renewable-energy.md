@@ -1,6 +1,6 @@
 ---
 title: "Renewable Energy"
-image: "images/Renewable-energy.jpg"
+image: "hanifbhuian.github.io/images/Renewable-energy.jpg"
 type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
