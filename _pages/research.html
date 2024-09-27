@@ -12,66 +12,13 @@ author_profile: true
   {% assign sorted_research = site.research | sort: 'date' | reverse %}
   {% for research in sorted_research %}
   <div class="research-item">
-    
-    <!-- Add Image for each project if available -->
-    {% if research.image %}
-      <img src="{{ research.image }}" alt="{{ research.title }}" class="research-img">
-    {% endif %}
-    
-    <!-- Project Title and Link -->
     <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
-    
-    <!-- Project Details -->
+    <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto;">
     <p><strong>Type:</strong> {{ research.type }} | <strong>Status:</strong> {{ research.status }}</p>
     <p><strong>Timeline:</strong> {{ research.timeline }}</p>
     <p>{{ research.summary }}</p>
-    
-    <!-- "Read More" Button -->
-    {% if research.permalink %}
-      <a href="{{ research.permalink }}" class="btn btn-primary">Read More</a>
-    {% endif %}
-    
   </div>
   <hr>
   {% endfor %}
 </div>
 
-<style>
-  .research-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 8px; /* Adds rounded corners to images */
-  }
-  
-  .research-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .research-item {
-    margin-bottom: 20px;
-  }
-
-  .research-item h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
-  }
-
-  .research-item p {
-    margin: 5px 0;
-  }
-
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-
-</style>
