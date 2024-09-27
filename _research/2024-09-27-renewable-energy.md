@@ -1,6 +1,6 @@
 ---
 title: "Renewable Energy"
-image: "images/Renewable-energy.png"
+image: "images/Renewable-energy-500x300.jpg"
 type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
