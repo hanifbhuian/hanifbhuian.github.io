@@ -2,6 +2,7 @@
 title: "Surface urban heat island intensity in five major cities of Bangladesh: Patterns, drivers and trends"
 collection: publications
 category: Research Paper
+permalink: /publications/Journal
 type: "Journal"
 date: 2021-08
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2210670721002122'
