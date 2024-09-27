@@ -1,25 +1,39 @@
----
-title: "Research"
-layout: single
-permalink: /research/
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects</title>
+    <link rel="stylesheet" href="your-style.css"> <!-- Add your CSS file link -->
+</head>
+<body>
 
-<!-- Research Page Structure -->
-<h2>Research Projects</h2>
+    <h2>Research Projects</h2>
 
-<div class="research-list">
-  {% assign sorted_research = site.research | sort: 'date' | reverse %}
-  {% for research in sorted_research %}
-  <div class="research-item">
-    <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
-    <p><strong>Type:</strong> {{ research.type }} | <strong>Status:</strong> {{ research.status }}</p>
-    <p><strong>Timeline:</strong> {{ research.timeline }}</p>
-    <p>{{ research.summary }}</p>
-    {% if research.permalink %}
-    <a href="{{ research.permalink }}" class="btn btn-primary">Read More</a>
-    {% endif %}
-  </div>
-  <hr>
-  {% endfor %}
-</div>
+    <div class="research-list">
+        <!-- Example Research Item -->
+        <div class="research-item">
+            <h3><a href="/research/machine-learning-concrete">Machine Learning-based Prediction of Flexural Strength of Fiberized Concrete</a></h3>
+            <p><strong>Type:</strong> Project | <strong>Status:</strong> Ongoing</p>
+            <p><strong>Timeline:</strong> January 2023 - Ongoing</p>
+            <p>This project is part of an ongoing thesis work that aims to predict the flexural strength of fiberized concrete using machine learning techniques...</p>
+            <a href="/research/machine-learning-concrete" class="btn btn-primary">Read More</a>
+        </div>
+        <hr>
+        <!-- Add more research items following the same structure -->
+
+        <div class="research-item">
+            <h3><a href="/research/urban-heat-island">Urban Heat Island Study in Bangladesh</a></h3>
+            <p><strong>Type:</strong> Review | <strong>Status:</strong> Completed</p>
+            <p><strong>Timeline:</strong> 2020 - 2021</p>
+            <p>This research critically reviews the existing Urban Heat Island (UHI) studies and examines the impacts in major cities in Bangladesh...</p>
+            <a href="/research/urban-heat-island" class="btn btn-primary">Read More</a>
+        </div>
+        <hr>
+
+        <!-- Add as many research items as you need -->
+
+    </div>
+
+</body>
+</html>
