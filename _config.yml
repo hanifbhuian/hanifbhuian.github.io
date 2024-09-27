@@ -73,18 +73,11 @@ author:
   youtube          : "https://www.youtube.com/@GeoAcademy"
   zhihu            : # URL
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - The following list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books/Book Chapters'  # Added
   Journal:
-    title: 'Journal Articles'
-  Conference:
-    title: 'Conference Papers'
-  Presentations:
-    title: 'Conference Presentations'
-  unpublished:
-    title: 'Unpublished'  # Added
+    title: 'Publications'  # Unified under 'Publications'
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
