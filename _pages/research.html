@@ -13,7 +13,8 @@ author_profile: true
   {% for research in sorted_research %}
   <div class="research-item">
     <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
-    <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto;">
+    <!-- Image with controlled resolution -->
+    <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
     <p><strong>Type:</strong> {{ research.type }} | <strong>Status:</strong> {{ research.status }}</p>
     <p><strong>Timeline:</strong> {{ research.timeline }}</p>
     <p>{{ research.summary }}</p>
