@@ -3,7 +3,7 @@ title: "Urban Heat Island Study in Bangladesh: Key Methods and Findings"
 collection: publications
 permalink: /publications/Urban Heat Island Study in Bangladesh: Key Methods and Findings
 date: 2022-10-17 # Date of publication
-type: "Review/Unpublished" # Options: Journal, Conference, Book, Presentation, Unpublished
+type: "Review" # Options: Journal, Conference, Book, Presentation, Unpublished
 status: "Unpublished" # Options: Published, Submitted, Unpublished
 year: 2022 # Publication year
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4249897" # Link to the publication file (if available)
