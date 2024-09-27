@@ -1,0 +1,25 @@
+---
+title: "Research"
+layout: single
+permalink: /research/
+author_profile: true
+---
+
+<!-- Research Page Structure -->
+<h2>Research Projects</h2>
+
+<div class="research-list">
+  {% assign sorted_research = site.research | sort: 'date' | reverse %}
+  {% for research in sorted_research %}
+  <div class="research-item">
+    <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
+    <p><strong>Type:</strong> {{ research.type }} | <strong>Status:</strong> {{ research.status }}</p>
+    <p><strong>Timeline:</strong> {{ research.timeline }}</p>
+    <p>{{ research.summary }}</p>
+    {% if research.permalink %}
+    <a href="{{ research.permalink }}" class="btn btn-primary">Read More</a>
+    {% endif %}
+  </div>
+  <hr>
+  {% endfor %}
+</div>
