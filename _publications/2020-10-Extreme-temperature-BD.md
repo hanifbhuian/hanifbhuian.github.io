@@ -2,6 +2,7 @@
 title: "Extreme temperature and rainfall events in Bangladesh: A comparison between coastal and inland areas"
 collection: publications
 category: Research Paper
+permalink: /publications/Journal
 type: "Journal"
 date: 2020-10
 paperurl: 'https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/joc.6911'
