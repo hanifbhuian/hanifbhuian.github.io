@@ -1,7 +1,7 @@
 ---
 title: "Urban Heat Island Study in Bangladesh: Key Methods and Findings"
 collection: publications
-permalink: /publications/Urban Heat Island Study in Bangladesh: Key Methods and Findings
+permalink: /publications/urban-heat-island-study-in-bangladesh-key-methods-and-findings
 date: 2022-10-17 # Date of publication
 type: "Review" # Options: Journal, Conference, Book, Presentation, Unpublished
 status: "Unpublished" # Options: Published, Submitted, Unpublished
