@@ -1,5 +1,6 @@
----
 title: "Renewable Energy"
+excerpt: "The studies assessed the environmental and economic impacts of solar PV systems in off-grid areas where electricity was not available. These studies used filed based data inclduing GIS based mapping and spatio-temporal data analysis to investigate the impact of solar PV systems in Bangladesh. <br/><img src='/images/Renewable-energy.png'>"
+collection: research
 type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
