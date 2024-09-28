@@ -7,7 +7,7 @@ permalink: /research/machine-learning-concrete
 ---
 
 
-<img src='/images/Renewable-energy-500x300.jpg'>
+<img src='/images/Renewable-energy.png'>
 
 
 <p style='text-align: justify;'>
