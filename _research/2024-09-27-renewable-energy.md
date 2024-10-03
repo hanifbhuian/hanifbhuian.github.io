@@ -1,5 +1,5 @@
 ---
-title: "Renewable Energy"
+title: "Renewable Energy || GIS & Field-based"
 excerpt: "The studies assessed the environmental and economic impacts of solar PV systems in off-grid areas where electricity was not available."
 collection: research
 status: "Done"
