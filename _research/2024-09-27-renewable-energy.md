@@ -6,8 +6,8 @@ type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
 permalink: /research/renewable-energy
-image: images/Renewable-energy.jpg  # Path for the small image
-large_image: images/Renewable-energy.jpg  # Path for the large image
+image: images/Renewable-energy-500x300.jpg  # Path for the small image
+large_image: images/Renewable-energy-500x300.jpg  # Path for the large image
 ---
 <img src="{{ page.image }}" alt="Renewable Energy" style="width: 300px;">  <!-- Small image for the main page -->
 
