@@ -6,7 +6,7 @@ status: "Done"
 timeline: "June 2017 - November 2017"
 permalink: /research/microclimate
 image: /images/microclimate.jpg  # Ensure the path is correct
-large_image: /images/fire1.jpg  # Full-width image for the project page
+large_image: /images/microclimate.jpg  # Full-width image for the project page
 ---
 
 <div style="max-width: 800px; margin: 0 auto;">
