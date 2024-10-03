@@ -1,6 +1,6 @@
 ---
 title: "Micro-climate || GIScience & RS"
-excerpt: "he undergraduate dissertation project, conducted by the Department of Geography and Environment at Jagannath University, Bangladesh, assessed microclimatic variations in four areas of Dhaka city using primary and secondary data. The study explored temperature, humidity, and wind speed differences, utilizing digital weather tools, ArcGIS, and Google Earth Pro."
+excerpt: "The undergraduate dissertation project, conducted by the Department of Geography and Environment at Jagannath University, Bangladesh, assessed microclimatic variations in four areas of Dhaka city using primary and secondary data. The study explored temperature, humidity, and wind speed differences, utilizing digital weather tools, ArcGIS, and Google Earth Pro."
 collection: research
 status: "Done"
 timeline: "June 2017 - November 2017"
