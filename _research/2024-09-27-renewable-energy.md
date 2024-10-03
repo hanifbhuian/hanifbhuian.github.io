@@ -1,5 +1,5 @@
 ---
-title: "The studies assessed the environmental and economic impacts of solar PV systems in off-grid areas where electricity was not available. These studies used filed based data inclduing GIS based mapping and spatio-temporal data analysis to investigate the impact of solar PV systems in Bangladesh>"
+title: "The studies assessed the environmental and economic impacts of solar PV systems in off-grid areas where electricity was not available. These studies used filed based data inclduing GIS based mapping and spatio-temporal data analysis to investigate the impact of solar PV systems in Bangladesh"
 collection: research
 type: "Project"
 status: "Done"
