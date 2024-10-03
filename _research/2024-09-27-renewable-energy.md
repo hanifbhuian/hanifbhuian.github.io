@@ -29,25 +29,23 @@ large_image: /images/Renewable-energy.jpg  # Full-width image for the project pa
 
   <!-- Additional Images and Descriptions -->
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_4.jpg" alt="Description of Image 1" style="width: 100%; height: auto;">
+    <img src="/images/SHS_4.jpg" alt="Questionnaire survey among SHS user (Rangpur)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Questionnaire survey among SHS user (Rangpur)</p>
   </div>
 
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_1.jpg" alt="Description of Image 2" style="width: 100%; height: auto;">
+    <img src="/images/SHS_1.jpg" alt="Solar Plant (Netrokona)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Solar Plant (Netrokona): Mountainous areas that some respondents use as a portable way for getting sufficient solar energy.</p>
   </div>
 
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_2.jpg" alt="Description of Image 3" style="width: 100%; height: auto;">
+    <img src="/images/SHS_2.jpg" alt="Solar Home System (Manikganj)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Solar Home System (Manikganj)</p>
   </div>
 
-</div>
- <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_3.jpg" alt="Description of Image 3" style="width: 100%; height: auto;">
+  <div style="margin-bottom: 30px;">
+    <img src="/images/SHS_3.jpg" alt="Water supply by solar plant (Bogura)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Water supply by solar plant (Bogura)</p>
   </div>
-
 
 </div>
