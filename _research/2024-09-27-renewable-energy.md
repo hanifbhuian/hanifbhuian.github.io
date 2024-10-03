@@ -5,7 +5,7 @@ collection: research
 status: "Done"
 timeline: "December 2017 - June 2019"
 permalink: /research/renewable-energy
-image: /images/Renewable-energy-500x300.jpg  # Ensure the path is correct
+image: /images/Renewable-energy.jpg  # Ensure the path is correct
 large_image: /images/Renewable-energy.jpg  # Full-width image for the project page
 ---
 
