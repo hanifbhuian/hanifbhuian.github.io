@@ -1,6 +1,6 @@
 ---
-title: "Forest Fires/Wildfires"
-excerpt: "The project focused on monitoring and managing active forest fires, including automatic fire clustering, perimeter delineation, and the generation of timely fire progression models using near real-time (NRT), ultra real-time (URT), and real-time (RT) data in Canada, particularly in Alberta and the Northwest Territories."
+title: "Forest Fires/Wildfires || GIScience & RS"
+excerpt: "The project focused on monitoring and managing active forest fires, including automatic fire clustering, perimeter delineation, and the generation of timely fire progression models using FIRMS ptovided satellite-based active fire data such as NRT/URT)/RT data in Canada, particularly in Alberta and the Northwest Territories."
 collection: research
 status: "Done"
 timeline: "September 2023 - October 2024"
