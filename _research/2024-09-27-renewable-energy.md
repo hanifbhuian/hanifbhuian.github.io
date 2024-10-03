@@ -5,7 +5,7 @@ collection: research
 type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
-permalink: research
+permalink:  /research/
 ---
 <img src='/images/Renewable-energy.png'>
 
