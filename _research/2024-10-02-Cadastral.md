@@ -24,7 +24,7 @@ large_image: /images/Cadastral_Mapping.jpg  # Full-width image for the project p
 
   <!-- Project Description -->
   <p style="text-align: justify; padding: 0 20px;">
-    The project conducted by the Land Ministry, Bangladesh, aimed to generate a digital format cadastral map using GIS tools across all unions, districts, and divisions in Bangladesh.
+    The cadastral mapping project conducted by the Land Ministry, Bangladesh, aimed to generate a digital format cadastral map using GIS tools across all unions, districts, and divisions in Bangladesh.
   </p>
 
   <!-- Additional Images and Descriptions -->
