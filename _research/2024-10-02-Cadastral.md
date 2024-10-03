@@ -5,8 +5,8 @@ collection: research
 status: "Contract Finished"
 timeline: "September 2022 - November 2022"
 permalink: /research/Cadastral_mapping
-image: /images/Cadastral Mapping.jpg  # Ensure the path is correct
-large_image: /images/Cadastral Mapping.jpg  # Full-width image for the project page
+image: /images/Cadastral_Mapping.jpg  # Ensure the path is correct
+large_image: /images/Cadastral_Mapping.jpg  # Full-width image for the project page
 ---
 
 <div style="max-width: 800px; margin: 0 auto;">
