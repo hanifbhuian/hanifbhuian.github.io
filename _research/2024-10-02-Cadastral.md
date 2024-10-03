@@ -19,7 +19,7 @@ large_image: /images/Cadastral_Mapping.jpg  # Full-width image for the project p
 
   <!-- Full-width image for the detailed project page -->
   <div style="text-align: center; margin-bottom: 30px;">
-    <img src="{{ page.large_image }}" alt="Renewable Energy" style="width: 100%; height: auto;">
+    <img src="{{ page.large_image }}" alt="Cadastral Mapping" style="width: 100%; height: auto;">
   </div>
 
   <!-- Project Description -->
