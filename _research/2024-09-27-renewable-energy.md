@@ -29,18 +29,18 @@ large_image: /images/Renewable-energy.jpg  # Full-width image for the project pa
 
   <!-- Additional Images and Descriptions -->
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_5.jpg" alt="Description of Image 1" style="width: 100%; height: auto;">
+    <img src="/images/SHS_4.jpg" alt="Description of Image 1" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Questionnaire survey among SHS user (Rangpur)</p>
   </div>
 
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_2.jpg" alt="Description of Image 2" style="width: 100%; height: auto;">
-    <p style="text-align: justify; padding: 0 20px;">Solar Home System (Manikganj)</p>
+    <img src="/images/SHS_1.jpg" alt="Description of Image 2" style="width: 100%; height: auto;">
+    <p style="text-align: justify; padding: 0 20px;">Solar Plant (Netrokona): Mountainous areas that some respondents use as a portable way for getting sufficient solar energy.</p>
   </div>
 
   <div style="margin-bottom: 30px;">
-    <img src="/images/SHS_1.jpg" alt="Description of Image 3" style="width: 100%; height: auto;">
-    <p style="text-align: justify; padding: 0 20px;">Solar Plant (Netrokona): Mountainous areas that some respondents use as a portable way for getting sufficient solar energy.</p>
+    <img src="/images/SHS_2.jpg" alt="Description of Image 3" style="width: 100%; height: auto;">
+    <p style="text-align: justify; padding: 0 20px;">Solar Home System (Manikganj)</p>
   </div>
 
 </div>
