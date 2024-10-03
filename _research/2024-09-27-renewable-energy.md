@@ -4,9 +4,8 @@ collection: research
 type: "Project"
 status: "Done"
 timeline: "December 2017 - June 2019"
-permalink: /research/machine-learning-concrete
+permalink: research
 ---
-
 
 <img src='/images/Renewable-energy.png'>
 
