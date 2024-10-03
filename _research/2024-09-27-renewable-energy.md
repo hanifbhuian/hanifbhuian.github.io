@@ -29,12 +29,12 @@ large_image: /images/Renewable-energy.jpg  # Full-width image for the project pa
 
   <!-- Additional Images and Descriptions -->
   <div style="margin-bottom: 30px;">
-    <img src="images/SHS_4.jpeg" alt="Questionnaire survey among SHS user (Rangpur)" style="width: 100%; height: auto;">
+    <img src="/images/SHS_4.jpeg" alt="Questionnaire survey among SHS user (Rangpur)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Questionnaire survey among SHS user (Rangpur)</p>
   </div>
 
   <div style="margin-bottom: 30px;">
-    <img src="images/SHS_1.jpeg" alt="Solar Plant (Netrokona)" style="width: 100%; height: auto;">
+    <img src="/images/SHS_1.jpeg" alt="Solar Plant (Netrokona)" style="width: 100%; height: auto;">
     <p style="text-align: justify; padding: 0 20px;">Solar Plant (Netrokona): Mountainous areas that some respondents use as a portable way for getting sufficient solar energy.</p>
   </div>
 
