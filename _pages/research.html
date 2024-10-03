@@ -1,33 +1,25 @@
 ---
-title: "Research"
+title: "{{ page.title }}"
+excerpt: "{{ page.excerpt }}"
 layout: single
-permalink: /research/
-author_profile: true
+permalink: /research/{{ page.title | slugify }}
+image: /images/{{ page.image }}  # Ensure the correct image path
+large_image: /images/{{ page.large_image }}  # Use this for the larger image
 ---
 
-<!-- Research Page Structure -->
-<h2>Research Projects</h2>
+<!-- Container for the project page -->
+<div class="project-page-container">
 
-<div class="research-list">
-  {% assign sorted_research = site.research | sort: 'date' | reverse %}
-  {% for research in sorted_research %}
-  <div class="research-item">
-    <!-- Title linking to the research page -->
-    <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
-    
-    <!-- Image with controlled resolution -->
-    <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
-    
-    <!-- Display status and timeline side by side -->
-    <p>
-      <strong>Status:</strong> {{ research.status }} 
-      &nbsp; | &nbsp; <!-- Adding space and a separator -->
-      <strong>Timeline:</strong> {{ research.timeline }}
-    </p>
-    
-    <!-- Research excerpt -->
-    <p>{{ research.excerpt }}</p>
+  <!-- Large Image centered -->
+  <div style="text-align: center;">
+    <img src="{{ page.large_image }}" alt="{{ page.title }}" style="max-width: 80%; height: auto; margin-bottom: 20px;">
   </div>
-  <hr>
-  {% endfor %}
+
+  <!-- Description with justified text and margins -->
+  <div style="text-align: justify; margin-left: 10%; margin-right: 10%;">
+    <p style='text-align: justify;'>
+      {{ page.content }}
+    </p>
+  </div>
+
 </div>
