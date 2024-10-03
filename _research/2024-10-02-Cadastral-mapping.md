@@ -1,5 +1,5 @@
 ---
-title: "Cadastral Mapping"
+title: "Cadastral Mapping || GIS-based"
 excerpt: "The project focused on cadastral mapping using GIS tools across all unions, districts, and divisions in Bangladesh to convert land data into a digital format."
 collection: research
 status: "Contract Finished"
