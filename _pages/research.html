@@ -12,14 +12,19 @@ author_profile: true
   {% assign sorted_research = site.research | sort: 'date' | reverse %}
   {% for research in sorted_research %}
   <div class="research-item">
+    <!-- Title linking to the research page -->
     <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
+    
     <!-- Image with controlled resolution -->
     <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
-    <p><strong>Type:</strong> {{ research.type }} | <strong>Status:</strong> {{ research.status }}</p>
+    
+    <!-- Display project status and timeline -->
+    <p><strong>Status:</strong> {{ research.status }}</p>
     <p><strong>Timeline:</strong> {{ research.timeline }}</p>
+    
+    <!-- Research summary -->
     <p>{{ research.summary }}</p>
   </div>
   <hr>
   {% endfor %}
 </div>
-
