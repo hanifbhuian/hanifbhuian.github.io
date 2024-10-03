@@ -18,9 +18,12 @@ author_profile: true
     <!-- Image with controlled resolution -->
     <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
     
-    <!-- Display project status and timeline -->
-    <p><strong>Status:</strong> {{ research.status }}</p>
-    <p><strong>Timeline:</strong> {{ research.timeline }}</p>
+    <!-- Display status and timeline side by side -->
+    <p>
+      <strong>Status:</strong> {{ research.status }} 
+      &nbsp; | &nbsp; <!-- Adding space and a separator -->
+      <strong>Timeline:</strong> {{ research.timeline }}
+    </p>
     
     <!-- Research excerpt -->
     <p>{{ research.excerpt }}</p>
