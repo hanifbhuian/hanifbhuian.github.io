@@ -19,7 +19,7 @@ large_image: /images/fire1.jpg  # Full-width image for the project page
 
   <!-- Full-width image for the detailed project page -->
   <div style="text-align: center; margin-bottom: 30px;">
-    <img src="{{ page.large_image }}" alt="Urban Warming" style="width: 100%; height: auto;">
+    <img src="{{ page.large_image }}" alt="Forest Fires/Wildfires" style="width: 100%; height: auto;">
   </div>
 
   <!-- Project Description -->
