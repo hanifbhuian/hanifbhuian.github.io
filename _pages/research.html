@@ -6,31 +6,27 @@ author_profile: true
 ---
 
 <!-- Research Page Structure -->
-<h2 style="text-align: center;">Research Projects</h2>
+<h2>Research Projects</h2>
 
 <div class="research-list">
-  {% assign sorted_research = site.research | sort: 'completion_date' | reverse %} <!-- Ensure sorting by a valid field -->
+  {% assign sorted_research = site.research | sort: 'timeline' | reverse %}
   {% for research in sorted_research %}
-  <div class="research-item" style="margin-bottom: 30px;"> <!-- Adding space between items -->
+  <div class="research-item">
     <!-- Title linking to the research page -->
-    <h3 style="text-align: center;">
-      <a href="{{ research.permalink }}" style="text-decoration: none; color: #007BFF;">{{ research.title }}</a>
-    </h3>
+    <h3><a href="{{ research.permalink }}">{{ research.title }}</a></h3>
     
     <!-- Image with controlled resolution -->
-    <div style="text-align: center;">
-      <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
-    </div>
+    <img src="{{ research.image }}" alt="{{ research.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
     
-    <!-- Display status and timeline -->
-    <p style="text-align: center;">
+    <!-- Display status and timeline side by side -->
+    <p>
       <strong>Status:</strong> {{ research.status }} 
-      &nbsp; | &nbsp; 
+      &nbsp; | &nbsp; <!-- Adding space and a separator -->
       <strong>Timeline:</strong> {{ research.timeline }}
     </p>
     
     <!-- Research excerpt -->
-    <p style="text-align: justify; padding: 0 20px;">{{ research.excerpt }}</p>
+    <p>{{ research.excerpt }}</p>
   </div>
   <hr>
   {% endfor %}
