@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <p style="text-align: justify;">
-I am currently pursuing an MSc (thesis-based) in Geomatics Engineering at the University of Calgary, supported by a full funding award. Alongside my studies, I serve as a graduate research assistant in the Earth Observation for Environment Laboratory.
+I am currently pursuing an MSc (thesis-based) in Geomatics Engineering at the University of Calgary, supported by a full funding award. Alongside my studies, I serve as a graduate research assistant in the [Earth Observation for Environment Laboratory](https://www.ucalgary.ca/labs/eoe-lab).
 </p>
 
 <p style="text-align: justify;">
