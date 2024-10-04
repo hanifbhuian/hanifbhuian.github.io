@@ -1,25 +1,34 @@
 ---
-layout: default
 title: "Blog Posts"
+layout: single
 permalink: /blog/
+author_profile: true  # This ensures the profile section is included
 ---
 
-<div class="page-content">
-  <div class="sidebar">
-    {% include sidebar.html %} <!-- This includes your profile section -->
-  </div>
+<!-- Blog Posts Page Structure -->
+<h2>Blog Posts</h2>
 
-  <div class="content-area">
-    <h1>Blog Posts</h1>
-    <ul class="blog-list">
-      {% for post in site.posts %}
-        <li class="blog-post">
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-          <p>{{ post.excerpt }}</p>
-          <a class="read-more" href="{{ post.url | relative_url }}">Read More</a>
-        </li>
-      {% endfor %}
-    </ul>
+<div class="blog-list">
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts %}
+  <div class="blog-item">
+    <!-- Blog Title linking to the post page -->
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    
+    <!-- If you have images associated with each post -->
+    {% if post.image %}
+      <img src="{{ post.image }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; object-fit: contain;">
+    {% endif %}
+    
+    <!-- Display date -->
+    <p><strong>Published on:</strong> {{ post.date | date: "%B %d, %Y" }}</p>
+    
+    <!-- Blog post excerpt -->
+    <p>{{ post.excerpt }}</p>
+    
+    <!-- Link to the full post -->
+    <a href="{{ post.url | relative_url }}">Read More</a>
   </div>
+  <hr>
+  {% endfor %}
 </div>
