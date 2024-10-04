@@ -1,66 +1,38 @@
-/* Wrapper for the entire page */
-.page-wrapper {
+.page-content {
   display: flex;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Sidebar (profile and info) */
-.profile-sidebar {
-  width: 25%;  /* Sidebar takes up 25% of the width */
+.sidebar {
+  width: 25%;
   padding-right: 20px;
 }
 
-/* Content area (where blog posts are) */
 .content-area {
-  width: 75%;  /* Content area takes up 75% of the width */
+  width: 75%;
 }
 
-/* Blog posts grid */
-.posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+.blog-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-.post-card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: #fff;
-  transition: box-shadow 0.3s ease;
+.blog-post {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-.post-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.post-content {
-  padding: 10px 0;
-}
-
-.post-content h2 {
+.blog-post h2 {
   font-size: 1.5em;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
-.post-content .post-date {
+.post-date {
   color: #777;
   font-size: 0.9em;
-  margin-bottom: 15px;
-}
-
-.post-content .post-excerpt {
-  font-size: 1.1em;
-  color: #555;
 }
 
 .read-more {
