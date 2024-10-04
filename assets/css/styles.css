@@ -1,0 +1,30 @@
+.blog-posts-container {
+  max-width: 800px;
+  margin: 0 auto;  /* Center the container */
+  padding: 20px;
+}
+
+.blog-posts-container h1 {
+  text-align: center;  /* Center the heading */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.blog-posts-container ul {
+  list-style-type: none;  /* Remove bullet points */
+  padding: 0;
+}
+
+.blog-posts-container ul li {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.blog-posts-container ul li a {
+  text-decoration: none;
+  color: #007acc;  /* Customize the link color */
+}
+
+.blog-posts-container ul li a:hover {
+  text-decoration: underline;  /* Add hover effect */
+}
