@@ -7,6 +7,20 @@ redirect_from:
   - /resume
 ---
 
+## Professional Summary
+
+A highly skilled and dedicated researcher specializing in remote sensing, GIS, and wildfire monitoring, with expertise in geospatial analysis and data science. Proven experience in developing early detection models, conducting climate-related studies, and providing educational content through Geo. Academy. Strong technical background in Python, Google Earth Engine, and GIS tools, with a passion for advancing sustainable environmental solutions.
+
+---
+
+## Skills
+
+- **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, SPSS  
+- **General Computer & Video Editing:** Windows and Mac OS, Microsoft Suite, Adobe Premiere Pro, Davinci Resolve  
+- **Team Work & Communication:** Collaboration with colleagues and executives, fund-raising, event planning, teaching, and presenting at scientific meetings  
+
+---
+
 ## Education
 - **Master of Science** | Geodesy, Remote Sensing, and Earth Observation  
   *University of Calgary, Canada*  
@@ -54,14 +68,6 @@ redirect_from:
   June 2019 – February 2022  
   - Managed projects related to urban climate hazards in Dhaka, Bangladesh.
   - Collected weather, air quality, and thermal data across four seasons and oversaw weather stations.
-
----
-
-## Skills
-
-- **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, SPSS  
-- **General Computer & Video Editing:** Windows and Mac OS, Microsoft Suite, Adobe Premiere Pro, Davinci Resolve  
-- **Team Work & Communication:** Collaboration with colleagues and executives, fund-raising, event planning, teaching, and presenting at scientific meetings  
 
 ---
 
