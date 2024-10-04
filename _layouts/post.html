@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="sidebar">
+    {% include sidebar.html %} <!-- This will display the profile sidebar -->
+  </div>
+
+  <div class="content-area">
+    <h1>{{ page.title }}</h1>
+    <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+
+    <div class="post-content">
+      {{ content }} <!-- This will display the full blog post content -->
+    </div>
+  </div>
+</div>
