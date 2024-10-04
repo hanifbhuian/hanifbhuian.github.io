@@ -5,7 +5,7 @@ author_profile: true  # This ensures the profile section is included
 ---
 
 <!-- Blog Posts Page Structure -->
-<h2>Blog Posts</h2>
+
 
 <div class="blog-list">
   {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
