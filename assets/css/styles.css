@@ -28,3 +28,4 @@
 .blog-posts-container ul li a:hover {
   text-decoration: underline;  /* Add hover effect */
 }
+<link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
