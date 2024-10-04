@@ -1,5 +1,4 @@
 ---
-title: "Blog Posts"
 layout: single
 permalink: /blog/
 author_profile: true  # This ensures the profile section is included
