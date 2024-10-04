@@ -18,7 +18,7 @@ location: "Calgary, Canada"
 - Assessed student assignments, providing constructive feedback to encourage academic growth.
 - Proctored exams, ensuring a secure and fair testing environment.
 
-### Achieved Skills:
+### Achieved Skills: 
 - **Google Earth Engine**
 - **Digital Image Processing**
 - **Forest Fire Monitoring and Burned Area Mapping**
