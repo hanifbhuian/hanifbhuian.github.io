@@ -17,9 +17,9 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 ## Skills
 
-- **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, SPSS  
-- **General Computer & Video Editing:** Windows and Mac OS, Microsoft Suite, Adobe Premiere Pro, Davinci Resolve  
-- **Team Work & Communication:** Collaboration with colleagues and executives, fund-raising, event planning, teaching, and presenting at scientific meetings  
+- **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, and SPSS  
+- **General Computer:** Windows and Mac OS, and Microsoft Office.  
+- **Team Work & Communication:** Collaboration with group-mates and teams, fund-raising, event planning, teaching, and presenting at scientific meetings  
 
 ---
 
@@ -30,7 +30,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
   *University of Calgary, Canada*  
   Expected Graduation: December 2024  
   GPA: 95% (current)  
-  Thesis: Forest fire monitoring and management (Published in peer-reviewed journals)
+  Thesis: Active forest fire monitoring and model development for early fire management: A satellite-based remote sensing study (Published in peer-reviewed journals)
 
 
 
@@ -38,7 +38,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
   *Jagannath University, Bangladesh*  
   May 2018 – August 2019  
   CGPA: 90% (3.71)  
-  Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study*
+  Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study (Published as conference presentation, BD)*
 
 
 
@@ -46,7 +46,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
   *Jagannath University, Bangladesh*  
   January 2013 – April 2018  
   CGPA: 87% (3.48)  
-  Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh*
+  Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh (Published as conference presentation, India)*
 
 
 ---
@@ -129,10 +129,11 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 - **Departmental Funding Award for Graduate Students**  
   June 2023  
   *Issued by the University of Calgary*  
-  Funding Amount: $1,800 + Tuition Fees
+  Funding Amount: $1,8000 + Tuition Fees
 
 - **International Graduate Tuition Award**  
-  June 2023  
+  June 2023
+  *Issued by the University of Calgary* 
   Funding Amount: $3,060 (annually)
 
 - **Article Presentation Competition (1st Place)**  
@@ -148,7 +149,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 ## Membership
 
 - Graduate Student Association, University of Calgary, Canada  
-- Bangladeshi Scholars’ Association, University of Calgary, Canada  
+- Bangladeshi Student’ Association, University of Calgary, Canada  
 - Geomatics Graduate Group, University of Calgary, Canada  
 - Association of Bangladeshi Engineers, Alberta, Canada  
 - Alumni Association, Jagannath University, Bangladesh  
