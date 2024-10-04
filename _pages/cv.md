@@ -170,17 +170,14 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 ## References
 
 - **Dr. Quazi K. Hassan**  
-  *Professor, Department of Geomatics Engineering, University of Calgary*  
+  *Professor, Department of Geomatics Engineering, University of Calgary, Canada*  
   qhassan@ucalgary.ca  
 
 - **Mohammad Razu Ahmed**  
   *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
 
--**Hatef Dastour, PhD**
-*Postdoctoral Associate*
-Department of Geomatics Engineering
-Centre for Environmental Engineering Research and Education (CEERE)
-University of Calgary, Canada 
-Email: hatef.dastour@ucalgary.ca  
+- **Hatef Dastour, PhD**
+  *Postdoctoral Associate, Department of Geomatics Engineering, Centre for Environmental Engineering Research and Education (CEERE), University of Calgary, Canada* 
+  Email: hatef.dastour@ucalgary.ca  
 
