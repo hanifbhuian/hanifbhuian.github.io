@@ -1,31 +1,65 @@
 .blog-posts-container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;  /* Ensure the container is centered */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 .blog-posts-container h1 {
-  text-align: center;  /* Center the heading */
-  font-size: 2em;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
-.blog-posts-container ul {
-  list-style-type: none;  /* Remove bullet points */
-  padding: 0;
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.blog-posts-container ul li {
-  margin: 15px 0;
-  font-size: 1.2em;
+.post-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
 }
 
-.blog-posts-container ul li a {
+.post-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.post-content {
+  padding: 10px 0;
+}
+
+.post-content h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.post-content .post-date {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.post-content .post-excerpt {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.read-more {
   text-decoration: none;
-  color: #007acc;  /* Customize the link color */
+  color: #007acc;
+  font-weight: bold;
 }
 
-.blog-posts-container ul li a:hover {
-  text-decoration: underline;  /* Add hover effect */
+.read-more:hover {
+  text-decoration: underline;
 }
