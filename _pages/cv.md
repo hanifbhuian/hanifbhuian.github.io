@@ -94,7 +94,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 <!-- Embedding Google Scholar Citation Graph -->
 <figure>
-  <img src="https://scholar.google.com/citations?view_op=graph&user=mB_32qkAAAAJ&hl=en" alt="Google Scholar Citation Graph">
+  <img src="https://scholar.google.com/citations?view_op=graph&user=mB_32qkAAAAJ&hl=en" alt="Google Scholar Citation Graph" style="max-width: 100%; height: auto;">
   <figcaption>Google Scholar Citation Graph</figcaption>
 </figure>
 
