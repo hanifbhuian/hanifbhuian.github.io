@@ -1,53 +1,48 @@
-/* Main page content container */
 .page-content {
-  display: flex; /* Flexbox layout for the sidebar and main content */
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  gap: 30px; /* Space between the sidebar and the content */
+  gap: 30px; /* Space between sidebar and main content */
 }
 
-/* Sidebar styling */
 .sidebar {
-  flex: 0 0 25%; /* Sidebar takes 25% of the space */
+  flex: 0 0 25%; /* Sidebar takes up 25% of the width */
   padding-right: 20px;
   box-sizing: border-box;
 }
 
-/* Main content area */
 .content-area {
-  flex: 1; /* Content area takes the remaining space */
+  flex: 1; /* Main content takes the remaining width */
   box-sizing: border-box;
 }
 
-/* Blog list styling */
-.blog-list {
-  list-style-type: none; /* Remove bullets from the list */
+.blog-list, .research-list {
+  list-style-type: none;
   padding: 0;
 }
 
-.blog-post {
+.blog-item, .research-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
 
-.blog-post h2 {
+.blog-item h3, .research-item h3 {
   font-size: 1.5em;
+}
+
+.blog-item p, .research-item p {
+  font-size: 1.1em;
   margin-bottom: 10px;
 }
 
-.post-date {
-  color: #777;
-  font-size: 0.9em;
-}
-
-.read-more {
+a {
   text-decoration: none;
   color: #007acc;
   font-weight: bold;
 }
 
-.read-more:hover {
+a:hover {
   text-decoration: underline;
 }
