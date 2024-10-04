@@ -1,5 +1,5 @@
 ---
-title: "Instructor (2017-Present)"
+title: "Freelance Instructor (2017-Present)"
 collection: teaching
 type: "Video Tutorial-based"
 permalink: /teaching/youtube
