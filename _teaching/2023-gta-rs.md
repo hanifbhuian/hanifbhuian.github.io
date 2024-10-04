@@ -7,7 +7,7 @@ venue: "University of Calgary, Geomatics Engineering"
 date: 2023-09-01
 location: "Calgary, Canada"
 ---
-# Course: ENGO 435 - Remote Sensing
+Course: ENGO 435 - Remote Sensing
 
 ### Responsibilities:
 - Conducted lab classes for the Remote Sensing course, providing hands-on learning experiences for undergraduate students.
