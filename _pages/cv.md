@@ -7,11 +7,11 @@ redirect_from:
   - /resume
 ---
 
-<div style="text-align: justify;">
-
 ## Professional Summary
 
+<p style="text-align: justify;">
 A highly skilled and dedicated researcher specializing in remote sensing, GIS, and wildfire monitoring, with expertise in geospatial analysis and data science. Proven experience in developing early detection models, conducting climate-related studies, and providing educational content through Geo. Academy. Strong technical background in Python, Google Earth Engine, and GIS tools, with a passion for advancing sustainable environmental solutions.
+</p>
 
 ---
 
@@ -24,52 +24,67 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 ---
 
 ## Education
+
+<p style="text-align: justify;">
 - **Master of Science** | Geodesy, Remote Sensing, and Earth Observation  
   *University of Calgary, Canada*  
   Expected Graduation: December 2024  
   GPA: 95% (current)  
   Thesis: Forest fire monitoring and management (Published in peer-reviewed journals)
+</p>
 
+<p style="text-align: justify;">
 - **Master of Science** | GIS & Remote Sensing  
   *Jagannath University, Bangladesh*  
   May 2018 – August 2019  
   CGPA: 90% (3.71)  
   Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study*
+</p>
 
+<p style="text-align: justify;">
 - **Bachelor of Science** | Geography and Environment  
   *Jagannath University, Bangladesh*  
   January 2013 – April 2018  
   CGPA: 87% (3.48)  
   Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh*
+</p>
 
 ---
 
 ## Work Experience
 
+<p style="text-align: justify;">
 - **Graduate Research Assistant**  
   *Earth Observation for Environment Laboratory, University of Calgary*  
   August 2023 – Present  
   - Conducted geospatial analysis and processed remote sensing data using Python and GIS tools to develop early detection models for forest fires.
   - Enhanced monitoring accuracy and reduced response times by preparing reports and publications.
-  
+</p>
+
+<p style="text-align: justify;">
 - **Graduate Teaching Assistant**  
   *Geomatics Engineering, University of Calgary*  
   August 2023 – December 2023  
   - Facilitated hands-on lab classes for the Remote Sensing course.
   - Instructed students in geospatial analysis using Google Earth Engine.
   - Provided individualized support and feedback, promoting skill development.
-  
+</p>
+
+<p style="text-align: justify;">
 - **Research Officer**  
   *Environment and Population Research Center (EPRC), Bangladesh*  
   December 2022 – June 2023  
   - Performed GIS mapping for arsenic contamination and conducted geospatial and statistical analyses.
   - Monitored project progress, provided training, and managed team activities.
-  
+</p>
+
+<p style="text-align: justify;">
 - **Research Assistant (Remote)**  
   *Curtin University, Australia*  
   June 2019 – February 2022  
   - Managed projects related to urban climate hazards in Dhaka, Bangladesh.
   - Collected weather, air quality, and thermal data across four seasons and oversaw weather stations.
+</p>
 
 ---
 
@@ -89,47 +104,64 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 ## Service and Leadership
 
+<p style="text-align: justify;">
 - **Founder**, Geo. Academy (Online Learning Platform)  
   September 2017 – Present  
   - Developed and managed educational resources related to geography and research techniques.
-  
+</p>
+
+<p style="text-align: justify;">
 - **Coordinator (President)**, Environment Club, Jagannath University  
   April 2018 – April 2021  
   - Led environmental initiatives and organized club activities.
+</p>
 
+<p style="text-align: justify;">
 - **Event Volunteer**, Environment Club, Jagannath University  
   June 2014 – June 2018  
+</p>
 
 ---
 
 ## Honors & Awards
 
+<p style="text-align: justify;">
 - **Alberta Graduate Excellence Scholarship (AGES)**  
   September 2024  
   *Issued by the Government of Alberta and the University of Calgary*  
   Funding Amount: $11,000
+</p>
 
+<p style="text-align: justify;">
 - **Departmental Funding Award for Graduate Students**  
   June 2023  
   *Issued by the University of Calgary*  
   Funding Amount: $1,800 + Tuition Fees
+</p>
 
+<p style="text-align: justify;">
 - **International Graduate Tuition Award**  
   June 2023  
   Funding Amount: $3,060 (annually)
+</p>
 
+<p style="text-align: justify;">
 - **Article Presentation Competition (1st Place)**  
   July 2017  
   *Issued by Jagannath University, Bangladesh*  
+</p>
 
+<p style="text-align: justify;">
 - **Project Competition (3rd Place)**  
   July 2017  
   *Issued by Jagannath University, Bangladesh*
+</p>
 
 ---
 
 ## Membership
 
+<p style="text-align: justify;">
 - Graduate Student Association, University of Calgary, Canada  
 - Bangladeshi Scholars’ Association, University of Calgary, Canada  
 - Geomatics Graduate Group, University of Calgary, Canada  
@@ -139,24 +171,29 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 - Bangladesh National Geographical Association (BNGA), Bangladesh  
 - Bangladesh Geographical Society (BGS), Bangladesh  
 - Foundation of Practicing Geographers (FPG), India
+</p>
 
 ---
 
 ## Interests
 
+<p style="text-align: justify;">
 - **Research:** Wildfires, Natural Hazards, Weather and Climate Change Detection, GIScience, Remote Sensing  
 - **Other:** Community service, leadership activities, public speaking
+</p>
 
 ---
 
 ## References
 
+<p style="text-align: justify;">
 - **Dr. Quazi K. Hassan**  
   *Professor, Department of Geomatics Engineering, University of Calgary*  
   qhassan@ucalgary.ca  
+</p>
 
+<p style="text-align: justify;">
 - **Mohammad Razu Ahmed**  
   *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
-
-</div>
+</p>
