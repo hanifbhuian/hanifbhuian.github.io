@@ -1,11 +1,13 @@
 ---
 layout: archive
-title: "Resume"
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
+
+<div style="text-align: justify;">
 
 ## Professional Summary
 
@@ -156,3 +158,5 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 - **Mohammad Razu Ahmed**  
   *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
+
+</div>
