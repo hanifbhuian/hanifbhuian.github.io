@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Lab"
 permalink: /teaching/Seasonal
 venue: "University of Calgary, Geomatics Engineering"
-date: 2023
+date: 2023-09-01
 location: "Calgary, Canada"
 ---
 
