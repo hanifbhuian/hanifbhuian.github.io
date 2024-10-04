@@ -91,13 +91,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 ## Publications
 
 <p>Total Publications: {{ site.publications | size }}</p>
-
-<!-- Embedding Google Scholar Citation Graph -->
-<figure>
-  <img src="https://scholar.google.com/citations?view_op=graph&user=mB_32qkAAAAJ&hl=en" alt="Google Scholar Citation Graph" style="max-width: 100%; height: auto;">
-  <figcaption>Google Scholar Citation Graph</figcaption>
-</figure>
-
+<a href="https://scholar.google.ca/citations?user=mB_32qkAAAAJ&hl=en" target="_blank">See all publications..</a>
 
 ---
 
