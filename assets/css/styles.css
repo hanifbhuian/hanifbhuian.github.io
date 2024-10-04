@@ -1,15 +1,24 @@
-.blog-posts-container {
+/* Wrapper for the entire page */
+.page-wrapper {
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.blog-posts-container h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
+/* Sidebar (profile and info) */
+.profile-sidebar {
+  width: 25%;  /* Sidebar takes up 25% of the width */
+  padding-right: 20px;
 }
 
+/* Content area (where blog posts are) */
+.content-area {
+  width: 75%;  /* Content area takes up 75% of the width */
+}
+
+/* Blog posts grid */
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
