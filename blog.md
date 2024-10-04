@@ -1,12 +1,12 @@
 ---
-layout: default  # Use your default layout
+layout: default
 title: "Blog Posts"
 permalink: /blog/
 ---
 
 <div class="page-content">
   <div class="sidebar">
-    {% include sidebar.html %} <!-- This includes your profile section, as seen on the research page -->
+    {% include sidebar.html %} <!-- This includes your profile section -->
   </div>
 
   <div class="content-area">
