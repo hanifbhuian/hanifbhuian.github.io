@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -62,6 +62,20 @@ redirect_from:
 - **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, SPSS  
 - **General Computer & Video Editing:** Windows and Mac OS, Microsoft Suite, Adobe Premiere Pro, Davinci Resolve  
 - **Team Work & Communication:** Collaboration with colleagues and executives, fund-raising, event planning, teaching, and presenting at scientific meetings  
+
+---
+
+## Publications
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+---
+
+## Teaching
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 ---
 
