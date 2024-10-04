@@ -176,3 +176,11 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 - **Mohammad Razu Ahmed**  
   *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
+
+-**Hatef Dastour, PhD**
+*Postdoctoral Associate*
+Department of Geomatics Engineering
+Centre for Environmental Engineering Research and Education (CEERE)
+University of Calgary, Canada 
+Email: hatef.dastour@ucalgary.ca  
+
