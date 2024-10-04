@@ -1,6 +1,7 @@
 .blog-posts-container {
   max-width: 800px;
-  margin: 0 auto;  /* Center the container */
+  margin-left: auto;
+  margin-right: auto;  /* Ensure the container is centered */
   padding: 20px;
 }
 
@@ -28,4 +29,3 @@
 .blog-posts-container ul li a:hover {
   text-decoration: underline;  /* Add hover effect */
 }
-<link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
