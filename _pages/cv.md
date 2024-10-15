@@ -35,15 +35,15 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 
 - **Master of Science** | GIS & Remote Sensing  
-  *Jagannath University, Bangladesh*  
+  *Geography and Environment, Jagannath University, Bangladesh*  
   May 2018 – August 2019  
   CGPA: 90% (3.71)  
   Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study (Published as conference presentation, BD)*
 
 
 
-- **Bachelor of Science** | Geography and Environment  
-  *Jagannath University, Bangladesh*  
+- **Bachelor of Science** | Geography   
+  *Geography and Environment, Jagannath University, Bangladesh*  
   January 2013 – April 2018  
   CGPA: 87% (3.48)  
   Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh (Published as conference presentation, India)*
@@ -167,7 +167,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
   *Professor, Department of Geomatics Engineering, University of Calgary, Canada*  
   qhassan@ucalgary.ca  
 
-- **Mohammad Razu Ahmed**  
+- **Dr. Mohammad Razu Ahmed**  
   *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
 
