@@ -42,7 +42,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 
 
-- **Bachelor of Science** | Geography   
+- **Bachelor of Science** | GIS & Remote Sensing  
   *Geography and Environment, Jagannath University, Bangladesh*  
   January 2013 – April 2018  
   CGPA: 87% (3.48)  
