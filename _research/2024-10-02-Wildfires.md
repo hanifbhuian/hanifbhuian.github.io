@@ -19,12 +19,12 @@ large_image: /images/fire1.jpg  # Full-width image for the project page
 
   <!-- Full-width image for the detailed project page -->
   <div style="text-align: center; margin-bottom: 30px;">
-    <img src="{{ page.large_image }}" alt="Forest Fires/Wildfires" style="width: 100%; height: auto;">
+    <img src="{{ page.large_image }}" alt="Wildfires" style="width: 100%; height: auto;">
   </div>
 
   <!-- Project Description -->
-  <p style="text-align: justify; padding: 0 20px; margin-bottom: 20px;">
-    This project aimed to enhance the monitoring and management of active forest fires in Canada, with a specific focus on Alberta and the Northwest Territories. The research involved the development of an automatic fire clustering algorithm to identify individual fire hotspots, alongside effective perimeter delineation techniques using near real-time (NRT)/ultra real-time (URT)/real-time (RT) data.
+  <p style="text-align: justify; padding: 0 20px;">
+   This project aimed to enhance the monitoring and management of active forest fires in Canada, with a specific focus on Alberta and the Northwest Territories. The research involved the development of an automatic fire clustering algorithm to identify individual fire hotspots, alongside effective perimeter delineation techniques using near real-time (NRT)/ultra real-time (URT)/real-time (RT) data.
 
 Data sources included the Fire Information for Resource Management System (FIRMS), which provided critical satellite-based fire detection and monitoring information. FIRMS offers access to NRT/URT/RT active fire data from various satellite sensors, specifically the Visible Infrared Imaging Radiometer Suite (VIIRS) and the Moderate Resolution Imaging Spectroradiometer (MODIS), allowing for accurate tracking of active fire locations and progression.
 
@@ -33,5 +33,5 @@ A significant aspect of the project was the generation of timely fire progressio
 The findings contribute to ongoing efforts in disaster management and environmental protection, aiming to reduce the catastrophic impacts of forest fires on ecosystems and communities.
   </p>
 
-  <!-- Additional Images and Descriptions -->
+  <!-- Additional Images and Descriptions --> 
   
