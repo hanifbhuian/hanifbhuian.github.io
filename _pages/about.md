@@ -15,7 +15,7 @@ My research focuses on early forest fire monitoring using satellite-derived acti
 </p>
 
 <p style="text-align: justify;">
-I am proficient in various software and programming tools, including Python, Google Earth Engine, MATLAB, ArcGIS Pro, QGIS, ERDAS Imagine, and ENVI. My long-term goal is to specialize in natural hazards, particularly forest fires, by leveraging satellite-based remote sensing technology for early monitoring and mitigation.
+I am proficient in various software and programming tools, including Python, Google Earth Engine, ArcGIS Pro, QGIS, ERDAS Imagine, MATLAB, and ENVI. My long-term goal is to specialize in GIScience including natural hazards, particularly forest fires, by leveraging satellite-based remote sensing technology for early monitoring and mitigation.
 </p>
 
 <p style="text-align: justify;">
