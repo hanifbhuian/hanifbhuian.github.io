@@ -2,7 +2,7 @@
 title: "Forest Fires/Wildfires || GIScience & RS"
 excerpt: "The project supervised by Dr. Quazi Hassan (Professor, Geomatics Engineering, University of Calgary), focused on monitoring and managing active forest fires, including automatic fire clustering, perimeter delineation, and the generation of timely fire progression models using FIRMS ptovided satellite-based active fire data such as NRT/URT)/RT data in Canada, particularly in Alberta and the Northwest Territories."
 collection: research
-status: "Contract Finished"
+status: "Done"
 timeline: "September 2023 - October 2024"
 permalink: /research/Forest Fires
 image: /images/fire1.jpg 
