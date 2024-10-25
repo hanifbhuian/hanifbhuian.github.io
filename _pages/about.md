@@ -21,3 +21,7 @@ I am proficient in various software and programming tools, including Python, Goo
 <p style="text-align: justify;">
 In my leisure time, I enjoy brainstorming new ideas, reading, and writing fiction for children under the pen name 'Humayun Hanif.' I also have a passion for travel and photography, especially appreciating the natural beauty of jungle mountains.
 </p>
+
+<p style="text-align: justify;">
+Email: md.bhuian@ucalgary.ca
+</p>
