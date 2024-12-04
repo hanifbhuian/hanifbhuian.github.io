@@ -30,7 +30,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
   *University of Calgary, Canada*  
   Expected Graduation: December 2024  
   GPA: 95% (current)  
-  Thesis: Active Forest Fire Monitoring and Management: A Satellite-based Remote Sensing Study (Published in peer-reviewed journals)
+  Thesis: Remote Sensing of Monitoring Forest Fire Dynamics in Near/Ultra Real-Time (Published in peer-reviewed journals)
 
 
 
