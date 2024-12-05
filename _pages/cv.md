@@ -100,15 +100,19 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 - **Founder**, Geo. Academy (Online Learning Platform)  
   September 2017 – Present  
-  - Developed and managed educational resources related to geography and research techniques.
+  **About/Aim:** Geo. Academy is a free online learning platform that provides education in geography and research-related tools and techniques. The goal of ‘Geo. Academy’ is to equip learners with the skills and knowledge needed to excel in geography and scientific research.
+
 
 
 - **Coordinator (President)**, Environment Club, Jagannath University  
-  April 2018 – April 2021  
-  - Led environmental initiatives and organized club activities.
+  April 2018 – April 2021
+  **Responsibility:** Lead and oversee club activities, plan and coordinate meetings and events, manage team roles and responsibilities, represent the club in campus and external forums, and ensure alignment with the club’s mission and goals.
+
 
 - **Event Volunteer**, Environment Club, Jagannath University  
-  June 2014 – June 2018  
+  June 2014 – June 2018
+  **Responsibility:** Organize and promote environmental events, raise awareness on sustainability through workshops and campaigns, collaborate with campus organizations, document activities and progress, and advocate for eco-friendly campus policies.
+ 
 
 ---
 
