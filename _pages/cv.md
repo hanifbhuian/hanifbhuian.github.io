@@ -10,16 +10,16 @@ redirect_from:
 ## Professional Summary
 
 <p style="text-align: justify;">
-A highly skilled and dedicated researcher specializing in remote sensing, GIS, and wildfire monitoring, with expertise in geospatial analysis and data science. Proven experience in developing early detection models, conducting climate-related studies, and providing educational content through Geo. Academy. Strong technical background in Python, Google Earth Engine, and GIS tools, with a passion for advancing sustainable environmental solutions.
+GIS and Remote Sensing professional with expertise in forest fire monitoring, mapping and geospatial analysis. Skilled in organizing and managing projects, analyzing, and reporting statistical and GIS-based data for environmental applications, with proficiency in Python, ArcGIS Pro, Google Earth Engine, QGIS, and other remote sensing tools.
 </p>
 
 ---
 
 ## Skills
 
-- **Programming & Data Analysis:** Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, ERDAS IMAGINE, MATLAB, ENVI, and SPSS  
-- **General Computer:** Windows and Mac OS, and Microsoft Office.  
-- **Team Work & Communication:** Collaboration with group-mates and teams, fund-raising, event planning, teaching, and presenting at scientific meetings  
+- **Programming & Data Analysis:** Experienced in using Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, and Microsoft office independently.
+- **Team Work & Communication:** Cooperated with research teams and co-authored publications. Successfully completed over ten engineering group projects. Known for punctuality, sincerity, and commitment to team goals.
+- **Communication:** Presented research at conferences, co-authored publications, and mentored students. Attended project meetings with supervisors, managers, and funders, ensuring clear communication and alignment on goals.
 
 ---
 
@@ -28,8 +28,8 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 - **Master of Science** | Geodesy, Remote Sensing, and Earth Observation  
   *University of Calgary, Canada*  
-  Expected Graduation: December 2024  
-  GPA: 95% (current)  
+  Graduation: December 2024  
+  CGPA: 95% (3.75)  
   Thesis: Remote Sensing of Monitoring Forest Fire Dynamics in Near/Ultra Real-Time (Published in peer-reviewed journals)
 
 
@@ -55,7 +55,7 @@ A highly skilled and dedicated researcher specializing in remote sensing, GIS, a
 
 - **Graduate Research Assistant**  
   *Earth Observation for Environment Laboratory, University of Calgary*  
-  August 2023 – Present  
+  August 2023 – December 2024  
   - Conducted geospatial analysis and processed remote sensing data using Python and GIS tools to develop early detection models for forest fires.
   - Enhanced monitoring accuracy and reduced response times by preparing reports and publications.
 
