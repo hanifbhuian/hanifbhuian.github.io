@@ -17,7 +17,7 @@ GIS and Remote Sensing professional with expertise in forest fire monitoring, ma
 
 ## Skills
 
-- **Programming & Data Analysis:** Experienced in using Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, and Microsoft office independently.
+- **Programming & Data Analysis:** Experienced in using Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, WebGIS, FME, Survey 123, ODK, and Microsoft Office independently.
 - **Team Work & Communication:** Cooperated with research teams and co-authored publications. Successfully completed over ten engineering group projects. Known for punctuality, sincerity, and commitment to team goals.
 - **Communication:** Presented research at conferences, co-authored publications, and mentored students. Attended project meetings with supervisors, managers, and funders, ensuring clear communication and alignment on goals.
 
