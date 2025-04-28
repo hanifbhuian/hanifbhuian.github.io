@@ -10,7 +10,7 @@ redirect_from:
 ## Professional Summary
 
 <p style="text-align: justify;">
-GIS and Remote Sensing professional with expertise in forest fire monitoring, mapping and geospatial analysis. Skilled in organizing and managing projects, analyzing, and reporting statistical and GIS-based data for environmental applications, with proficiency in Python, ArcGIS Pro, Google Earth Engine, QGIS, and other remote sensing tools.
+GIS and Remote Sensing professional with expertise in geospatial analysis including environmental monitoring and mapping. Skilled in organizing and managing projects, surveying, analyzing, and reporting statistical and GIS-based data for environmental applications, with proficiency in Python, ArcGIS/Online, Google Earth Engine, QGIS, and other remote sensing tools.
 </p>
 
 ---
@@ -148,7 +148,8 @@ GIS and Remote Sensing professional with expertise in forest fire monitoring, ma
 
 - Graduate Student Association, University of Calgary, Canada  
 - Bangladeshi Student’ Association, University of Calgary, Canada  
-- Geomatics Graduate Group, University of Calgary, Canada  
+- Geomatics Graduate Group, University of Calgary, Canada
+- International Association for Urban Climate, USA  
 - Association of Bangladeshi Engineers, Alberta, Canada  
 - Alumni Association, Jagannath University, Bangladesh  
 - Environment Club, Jagannath University, Bangladesh  
@@ -160,8 +161,8 @@ GIS and Remote Sensing professional with expertise in forest fire monitoring, ma
 
 ## Interests
 
-- **Research:** Wildfires, Natural Hazards, Weather and Climate Change Detection, GIScience, Remote Sensing  
-- **Other:** Community service, leadership activities, public speaking
+- **Research:** Environmental monitoring and management, wildfires, natural hazards, weather and climate, change detection, mapping, GIScience, and Remote sensing  
+- **Other:** Social work, volunteering, leadership activities, and public speaking
 
 ---
 
@@ -172,10 +173,10 @@ GIS and Remote Sensing professional with expertise in forest fire monitoring, ma
   qhassan@ucalgary.ca  
 
 - **Dr. Mohammad Razu Ahmed**  
-  *Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
+  *Researcher, Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
 
 - **Hatef Dastour, PhD**
-  *Postdoctoral Associate, Department of Geomatics Engineering, Centre for Environmental Engineering Research and Education (CEERE), University of Calgary, Canada* 
+  *Researcher and Educator, Department of Geomatics Engineering, Centre for Environmental Engineering Research and Education (CEERE), University of Calgary, Canada* 
   Email: hatef.dastour@ucalgary.ca  
 
