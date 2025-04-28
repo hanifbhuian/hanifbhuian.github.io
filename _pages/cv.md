@@ -6,6 +6,8 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+[Download as PDF](https://drive.google.com/file/d/1myrIzBrVvXAejjciTMzpp1Iw_HKcUUlS/view?usp=sharing)
+
 
 ## Professional Summary
 
