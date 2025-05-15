@@ -19,37 +19,9 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 
 ## Skills
 
-- **Programming & Data Analysis:** Experienced in using Python, Google Earth Engine (GEE), Esri ArcGIS Pro, QGIS, WebGIS, FME, Survey 123, ODK, and Microsoft Office independently.
-- **Team Work & Communication:** Cooperated with research teams and co-authored publications. Successfully completed over ten engineering group projects. Known for punctuality, sincerity, and commitment to team goals.
-- **Communication:** Presented research at conferences, co-authored publications, and mentored students. Attended project meetings with supervisors, managers, and funders, ensuring clear communication and alignment on goals.
-
----
-
-## Education
-
-
-- **Master of Science** | Geodesy, Remote Sensing, and Earth Observation  
-  *University of Calgary, Canada*  
-  Graduation: December 2024  
-  CGPA: 95% (3.75)  
-  Thesis: Remote Sensing of Monitoring Forest Fire Dynamics in Near/Ultra Real-Time (Published in peer-reviewed journals)
-
-
-
-- **Master of Science** | GIS & Remote Sensing  
-  *Geography and Environment, Jagannath University, Bangladesh*  
-  May 2018 – August 2019  
-  CGPA: 90% (3.71)  
-  Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study (Published as conference presentation, BD)*
-
-
-
-- **Bachelor of Science** | GIS & Remote Sensing  
-  *Geography and Environment, Jagannath University, Bangladesh*  
-  January 2013 – April 2018  
-  CGPA: 87% (3.48)  
-  Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh (Published as conference presentation, India)*
-
+- **Programming/Software:** Proficient in Python, Google Earth Engine (GEE), ArcGIS, QGIS, WebGIS, FME, Survey123, ODK, and Microsoft Office, with the ability to work independently across platforms.
+- **Instrumentation:** Experienced with Total Stations, LiDAR, UAVs/Drones, GNSS/GPS receivers, as well as weather stations and thermal cameras for geospatial data collection and environmental monitoring.
+- **Teamwork & Communication:** Proven ability to work collaboratively in academic, research, and volunteer settings. Skilled in leading interdisciplinary projects, delivering technical support and instruction, and communicating complex geospatial concepts to diverse audiences across academia and industry.
 
 ---
 
@@ -80,6 +52,33 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
   June 2019 – February 2022  
   - Managed projects related to urban climate hazards in Dhaka, Bangladesh.
   - Collected weather, air quality, and thermal data across four seasons and oversaw weather stations.
+
+---
+
+## Education
+
+
+- **Master of Science** | Geodesy, Remote Sensing, and Earth Observation  
+  *University of Calgary, Canada*  
+  Graduation: December 2024  
+  CGPA: 95% (3.75)  
+  Thesis: Remote Sensing of Monitoring Forest Fire Dynamics in Near/Ultra Real-Time (Published in peer-reviewed journals)
+
+
+
+- **Master of Science** | GIS & Remote Sensing  
+  *Geography and Environment, Jagannath University, Bangladesh*  
+  May 2018 – August 2019  
+  CGPA: 90% (3.71)  
+  Research Project: *Investigation of Climate Scenario with Their Land Cover Condition of Two Major Cities in Bangladesh: A Spatio-Temporal Study (Published as conference presentation, BD)*
+
+
+
+- **Bachelor of Science** | GIS & Remote Sensing  
+  *Geography and Environment, Jagannath University, Bangladesh*  
+  January 2013 – April 2018  
+  CGPA: 87% (3.48)  
+  Dissertation: *Analysis of Microclimatic Conditions on Four Different Zones within Dhaka City, Bangladesh (Published as conference presentation, India)*
 
 
 ---
@@ -178,7 +177,7 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
   *Researcher, Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
   Razu_Ahmed@gov.nt.ca
 
-- **Hatef Dastour, PhD**
-  *Researcher and Educator, Department of Geomatics Engineering, Centre for Environmental Engineering Research and Education (CEERE), University of Calgary, Canada* 
-  Email: hatef.dastour@ucalgary.ca  
+- **Dr. Hatef Dastour, PhD**
+  *Assistant Teaching Professor, University of Missouri-Columbia, USA* 
+  Email: hdtg3@missouri.edu  
 
