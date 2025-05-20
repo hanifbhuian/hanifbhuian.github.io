@@ -21,7 +21,7 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 
 - **Programming/Software:** Proficient in Python, Google Earth Engine (GEE), ArcGIS, QGIS, WebGIS, FME, Survey123, ODK, and Microsoft Office, with the ability to work independently across platforms.
 - **Instrumentation:** Experienced with Total Stations, LiDAR, UAVs/Drones, GNSS/GPS receivers, as well as weather stations and thermal cameras for geospatial data collection and environmental monitoring.
-- **Teamwork & Communication:** Proven ability to work collaboratively in academic, research, and volunteer settings. Skilled in leading interdisciplinary projects, delivering technical support and instruction, and communicating complex geospatial concepts to diverse audiences across academia and industry.
+- **Others:** Creative Problem solving · Geospatial Datasets Handling · Agility · Report Writing · Decision Making · Time Management · Team Collaboration   
 
 ---
 
@@ -30,16 +30,19 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 - **Graduate Research Assistant**  
   *Earth Observation for Environment Laboratory, University of Calgary*  
   August 2023 – December 2024  
-  - Conducted geospatial analysis and processed remote sensing data using Python and GIS tools to develop early detection models for forest fires.
-  - Enhanced monitoring accuracy and reduced response times by preparing reports and publications.
+  - Conducted geospatial analysis and remote sensing techniques using Python (for automation and analysis) and GIS tools (e.g., Esri ArcGIS Pro, Portal for ArcGIS, QGIS, FME).
+  - Improved monitoring accuracy and developed the TAFP model.
+  - Created static maps and interactive web applications with dashboards for active fire monitoring.
+  - Cleaned, transformed, and managed fire-related geospatial datasets from FIRMS and NRCan.
+  - Authored reports and publications advancing fire monitoring methodologies.
 
 
 - **Graduate Teaching Assistant**  
   *Geomatics Engineering, University of Calgary*  
   August 2023 – December 2023  
-  - Facilitated hands-on lab classes for the Remote Sensing course.
-  - Instructed students in geospatial analysis using Google Earth Engine.
-  - Provided individualized support and feedback, promoting skill development.
+  - Instructed lab sessions on GIS and Remote Sensing; guided students in geospatial analysis and data visualization using Google Earth Engine.
+  - Taught geospatial data cleaning techniques, including handling missing, poor-quality, and incomplete data through Python and GIS tools.
+  - Provided individualized support and feedback to promote skill development.
 
 - **Research Officer**  
   *Environment and Population Research Center (EPRC), Bangladesh*  
@@ -50,8 +53,9 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 - **Research Assistant (Remote)**  
   *Curtin University, Australia*  
   June 2019 – February 2022  
-  - Managed projects related to urban climate hazards in Dhaka, Bangladesh.
-  - Collected weather, air quality, and thermal data across four seasons and oversaw weather stations.
+  - Managed projects and collected seasonal weather and air quality data.
+  - Oversaw 80 weather stations; conducted spatial and statistical analyses using ArcGIS and SPSS; led land survey teams (used Survey 123, ODK, and Drones).
+  - Cleaned and visualized data into static, instructive maps for analysis and reporting. 
 
 ---
 
