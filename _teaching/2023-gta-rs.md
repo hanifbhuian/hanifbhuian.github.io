@@ -11,7 +11,8 @@ Course: ENGO 435 - Remote Sensing
 
 ### Responsibilities:
 - Conducted lab classes for the Remote Sensing course, providing hands-on learning experiences for undergraduate students.
-- Instructed students in geospatial analysis using Google Earth Engine, enhancing their practical skills in remote sensing.
+- Instructed students in geospatial analysis using GIS and Google Earth Engine, enhancing their practical skills in remote sensing.
+- Taught geospatial data cleaning techniques, including handling missing, poor-quality, and incomplete data through Python and GIS tools
 - Prepared comprehensive lab materials, notes, and worksheets to support course objectives and facilitate student learning.
 - Offered individualized support by addressing student queries and resolving course-related issues.
 - Assessed student assignments, providing constructive feedback to encourage academic growth.
