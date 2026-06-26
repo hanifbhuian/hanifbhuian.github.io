@@ -6,56 +6,69 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-[Download as PDF](https://drive.google.com/file/d/1myrIzBrVvXAejjciTMzpp1Iw_HKcUUlS/view?usp=sharing)
+[Download as PDF](https://drive.google.com/file/d/1I-I8egjsB39YpbCDNbxRXpp3m1odlH1P/view?usp=drive_link)
 
 
 ## Professional Summary
 
 <p style="text-align: justify;">
-GIS and Remote Sensing professional with expertise in geospatial analysis including environmental monitoring and mapping. Skilled in organizing and managing projects, surveying, analyzing, and reporting statistical and GIS-based data for environmental applications, with proficiency in Python, ArcGIS/Online, Google Earth Engine, QGIS, and other remote sensing tools.
+GIS and Remote Sensing professional with over four years of experience in spatial data management, GIS system support, and field-to-office workflows across Canada and internationally. Specialized in GIS, remote sensing, and Earth observation. Skilled in geospatial data analysis and project management, with a focus on environmental monitoring and mapping. Proficient in Python (ArcPy, GeoPandas) and a wide range of geospatial tools, including ArcGIS Pro, QGIS, WebGIS, FME, Google Earth Engine, ENVI, ERDAS Imagine, and surveying tools such as Survey123 and ArcGIS Field Maps.
 </p>
 
 ---
 
 ## Skills
 
-- **Programming/Software:** Proficient in Python, Google Earth Engine (GEE), ArcGIS, QGIS, WebGIS, FME, Survey123, ODK, and Microsoft Office, with the ability to work independently across platforms.
-- **Instrumentation:** Experienced with Total Stations, LiDAR, UAVs/Drones, GNSS/GPS receivers, as well as weather stations and thermal cameras for geospatial data collection and environmental monitoring.
-- **Others:** Creative Problem solving · Geospatial Datasets Handling · Agility · Report Writing · Decision Making · Time Management · Team Collaboration   
+- **GIS & Mapping:** ArcGIS Pro, ArcGIS Online, Web GIS, QGIS, cartography, spatial visualization, and production-grade map design.
+- **Mobile GIS, Surveying & Field Operations:** Survey123, ArcGIS Field Maps, QuickCapture, ODK, GPS/GNSS (RTK), field data collection, surveying, and data integration.
+- **Geospatial Analysis:** Advanced geoprocessing, spatial analysis, terrain modeling, statistical analysis, site suitability, and planning.
+- **Remote Sensing:** Satellite imagery analysis, LiDAR processing, UAV/UAS data processing, and interpretation.
+- **Database & Data Management:** Enterprise geodatabases, spatial data management, QA/QC, data validation, SQL, and FME.
+- **GIS Automation & Development:** Python (ArcPy), APIs, ModelBuilder, and geospatial workflow automation.
+- **CAD & Land Development:** AutoCAD, Civil 3D, drafting, land permit documentation, development, and municipal planning support.
+- **Project Coordination & Communication:** Technical reporting, stakeholder engagement, field crew coordination, multidisciplinary collaboration, time management, and task prioritization.
 
 ---
 
 ## Work Experience
 
-- **Graduate Research Assistant**  
-  *Earth Observation for Environment Laboratory, University of Calgary*  
-  August 2023 – December 2024  
-  - Conducted geospatial analysis and remote sensing techniques using Python (for automation and analysis) and GIS tools (e.g., Esri ArcGIS Pro, Portal for ArcGIS, QGIS, FME).
-  - Improved monitoring accuracy and developed the TAFP model.
-  - Created static maps and interactive web applications with dashboards for active fire monitoring.
-  - Cleaned, transformed, and managed fire-related geospatial datasets from FIRMS and NRCan.
-  - Authored reports and publications advancing fire monitoring methodologies.
+- **GIS Technician**  
+  *Summit Geo Inc., Canada*  
+  August 2025 – May 2026  
+  - Delivered GIS analysis and field-to-office support for oil & gas, utility, land, and construction projects using ArcGIS Pro.
+  - Managed and analyzed UAV, aerial imagery, and GNSS/GPS datasets using ArcGIS Pro and Web GIS platforms.
+  - Produced high-quality maps, spatial datasets, and technical deliverables for clients and project teams.
+  - Performed QA/QC, spatial data validation, and quality control checks to maintain data accuracy and integrity.
+  - Coordinated survey crews and field operations to support efficient data collection and project delivery.
+  - Reviewed legal plans and managed pipeline permitting and land access workflows for utility projects.
 
+- **Research Assistant**  
+  *Earth Observation for Environment Laboratory, University of Calgary, Canada*  
+  August 2023 – August 2025  
+  - Automated large-scale geospatial workflows using Python (ArcPy) and ModelBuilder to improve processing efficiency, scalability, and reproducibility.
+  - Developed wildfire monitoring and detection models using multi-source satellite imagery.
+  - Integrated national geospatial datasets for forest fire analysis, perimeter delineation, and terrain interpretation.
+  - Built ArcGIS Online web maps to communicate research outputs and support decision-making.
+  - Conducted spatial accuracy assessment and managed geodatabases to ensure data quality and consistency.
+  - Produced technical reports and publications, ensuring timely delivery and effective research communication.
 
-- **Graduate Teaching Assistant**  
-  *Geomatics Engineering, University of Calgary*  
-  August 2023 – December 2023  
-  - Instructed lab sessions on GIS and Remote Sensing; guided students in geospatial analysis and data visualization using Google Earth Engine.
-  - Taught geospatial data cleaning techniques, including handling missing, poor-quality, and incomplete data through Python and GIS tools.
-  - Provided individualized support and feedback to promote skill development.
-
-- **Research Officer**  
+- **Project Officer (GIS Department)**  
   *Environment and Population Research Center (EPRC), Bangladesh*  
   December 2022 – June 2023  
-  - Performed GIS mapping for arsenic contamination and conducted geospatial and statistical analyses.
-  - Monitored project progress, provided training, and managed team activities.
+  - Managed GIS datasets and produced professional maps for environmental, public health, and land-use assessment projects.
+  - Performed geospatial and statistical analysis using ArcGIS and Microsoft Excel to support decision-making.
+  - Supervised and trained field teams for spatial data collection and site verification to ensure accuracy and consistency.
+  - Conducted QA/QC and data validation on spatial and statistical datasets to ensure data quality standards.
+  - Prepared technical reports, presentations, and documentation for internal and external stakeholders.
 
 - **Research Assistant (Remote)**  
   *Curtin University, Australia*  
   June 2019 – February 2022  
+  **Project:** Urban Warming in Dhaka Megacity  
+  **Conducted by:** Dr. Ashraf Dewan, Associate Professor, Curtin University, Australia  
   - Managed projects and collected seasonal weather and air quality data.
-  - Oversaw 80 weather stations; conducted spatial and statistical analyses using ArcGIS and SPSS; led land survey teams (used Survey 123, ODK, and Drones).
-  - Cleaned and visualized data into static, instructive maps for analysis and reporting. 
+  - Oversaw 80 weather stations; conducted spatial and statistical analyses using ArcGIS and SPSS; led land survey teams using Survey123, ODK, and drones.
+  - Cleaned and visualized data into static, instructive maps for analysis and reporting.
 
 ---
 
@@ -110,14 +123,15 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 
 
 - **Coordinator (President)**, Environment Club, Jagannath University  
-  April 2018 – April 2021
+  April 2018 – April 2021  
   **Responsibility:** Lead and oversee club activities, plan and coordinate meetings and events, manage team roles and responsibilities, represent the club in campus and external forums, and ensure alignment with the club’s mission and goals.
 
 
+
 - **Event Volunteer**, Environment Club, Jagannath University  
-  June 2014 – June 2018
+  June 2014 – June 2018  
   **Responsibility:** Organize and promote environmental events, raise awareness on sustainability through workshops and campaigns, collaborate with campus organizations, document activities and progress, and advocate for eco-friendly campus policies.
- 
+  
 
 ---
 
@@ -135,8 +149,8 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
   Funding Amount: $1,8000 + Tuition Fees
 
 - **International Graduate Tuition Award**  
-  June 2023
-  *Issued by the University of Calgary* 
+  June 2023  
+  *Issued by the University of Calgary*   
   Funding Amount: $3,060 (annually)
 
 - **Article Presentation Competition (1st Place)**  
@@ -161,27 +175,3 @@ GIS and Remote Sensing professional with expertise in geospatial analysis includ
 - Bangladesh National Geographical Association (BNGA), Bangladesh  
 - Bangladesh Geographical Society (BGS), Bangladesh  
 - Foundation of Practicing Geographers (FPG), India
-
----
-
-## Interests
-
-- **Research:** Environmental monitoring and management, wildfires, natural hazards, weather and climate, change detection, mapping, GIScience, and Remote sensing  
-- **Other:** Social work, volunteering, leadership activities, and public speaking
-
----
-
-## References
-
-- **Dr. Quazi K. Hassan**  
-  *Professor, Department of Geomatics Engineering, University of Calgary, Canada*  
-  qhassan@ucalgary.ca  
-
-- **Dr. Mohammad Razu Ahmed**  
-  *Researcher, Western Arctic Centre for Geomatics, Government of Northwest Territories, Canada*  
-  Razu_Ahmed@gov.nt.ca
-
-- **Dr. Hatef Dastour, PhD**
-  *Assistant Teaching Professor, University of Missouri-Columbia, USA* 
-  Email: hdtg3@missouri.edu  
-
