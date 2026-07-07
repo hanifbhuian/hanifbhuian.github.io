@@ -1,4 +1,4 @@
-const CACHE_NAME = "psd-delivery-v9-service-ratio-20260707";
+const CACHE_NAME = "psd-delivery-v10-mobile-order-20260707";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
