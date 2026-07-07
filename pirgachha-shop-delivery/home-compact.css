@@ -1,4 +1,18 @@
 /* Compact customer homepage service cards */
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.track-top {
+  background: var(--brand) !important;
+  color: #ffffff !important;
+  border-color: var(--brand) !important;
+  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.16);
+}
+
 .service-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 12px !important;
@@ -49,6 +63,17 @@
 }
 
 @media (max-width: 860px) {
+  .top-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+
+  .top-actions .ghost {
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+  }
+
   .service-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     gap: 7px !important;
@@ -105,6 +130,11 @@
 }
 
 @media (max-width: 390px) {
+  .top-actions .ghost {
+    padding: 7px 8px !important;
+    font-size: 11px !important;
+  }
+
   .service-grid {
     gap: 5px !important;
   }
