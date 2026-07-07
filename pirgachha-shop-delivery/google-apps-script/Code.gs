@@ -9,11 +9,16 @@ How to use:
    - Execute as: Me
    - Who has access: Anyone
 6) Copy the Web App URL and paste it into app.js as CONFIG.googleScriptUrl
+
+Receipt upload note:
+- Rider receipt files are saved in Google Drive folder: Pirgachha Shop Delivery Receipts
+- The receipt file link is saved in the Orders sheet and Status Updates sheet
 */
 
 const NOTIFICATION_EMAIL = "yourbusiness@email.com"; // Change or leave blank "" to disable email alert
 const ORDERS_SHEET = "Orders";
 const STATUS_SHEET = "Status Updates";
+const RECEIPT_FOLDER_NAME = "Pirgachha Shop Delivery Receipts";
 
 function doPost(e) {
   try {
@@ -60,10 +65,11 @@ function createOrder_(payload) {
     payload.rider || "",
     payload.source || "website",
     payload.fullMessage || "",
-    JSON.stringify(payload)
+    JSON.stringify(payload),
+    ""
   ];
   sheet.appendRow(row);
-  appendStatus_(payload.orderId, payload.status || "Order Received", "", "Order received from website", now);
+  appendStatus_(payload.orderId, payload.status || "Order Received", "", "Order received from website", now, "");
   sendEmailAlert_("New order: " + (payload.orderId || ""), payload.fullMessage || JSON.stringify(payload, null, 2));
   return { ok: true, orderId: payload.orderId || "", status: payload.status || "Order Received" };
 }
@@ -75,20 +81,32 @@ function updateStatus_(payload) {
   const rider = payload.rider || "";
   const note = payload.note || "";
   const now = new Date();
+  const receiptUrl = saveReceipt_(payload, orderId);
   const values = sheet.getDataRange().getValues();
   let found = false;
+
   for (let i = 1; i < values.length; i++) {
     if (String(values[i][0]).trim() === orderId) {
       sheet.getRange(i + 1, 3).setValue(now);      // Updated Time
       sheet.getRange(i + 1, 5).setValue(status);   // Status
       sheet.getRange(i + 1, 15).setValue(rider);   // Assigned Rider
+      if (receiptUrl) sheet.getRange(i + 1, 19).setValue(receiptUrl); // Receipt File
       found = true;
       break;
     }
   }
-  appendStatus_(orderId, status, rider, note, now);
-  sendEmailAlert_("Status update: " + orderId, payload.fullMessage || JSON.stringify(payload, null, 2));
-  return { ok: found, orderId, status, rider, message: found ? "Status updated" : "Order ID not found, but status note was saved" };
+
+  appendStatus_(orderId, status, rider, note, now, receiptUrl);
+  const emailBody = (payload.fullMessage || JSON.stringify(payload, null, 2)) + (receiptUrl ? "\n\nReceipt file: " + receiptUrl : "");
+  sendEmailAlert_("Status update: " + orderId, emailBody);
+  return {
+    ok: found,
+    orderId,
+    status,
+    rider,
+    receiptUrl,
+    message: found ? "Status updated" : "Order ID not found, but status note was saved"
+  };
 }
 
 function trackOrder_(orderId, phone) {
@@ -118,24 +136,70 @@ function trackOrder_(orderId, phone) {
   return { ok: false, message: "No matching order found. Check Order ID and phone number." };
 }
 
-function appendStatus_(orderId, status, rider, note, when) {
-  const sheet = getSheet_(STATUS_SHEET, ["Time", "Order ID", "Status", "Rider", "Note"]);
-  sheet.appendRow([when || new Date(), orderId || "", status || "", rider || "", note || ""]);
+function saveReceipt_(payload, orderId) {
+  try {
+    const file = payload.receiptFile;
+    if (!file || !file.data) return "";
+
+    const folder = getReceiptFolder_();
+    const originalName = file.name || payload.receiptFileName || "receipt";
+    const safeName = safeFileName_((orderId || "PSD") + "_" + originalName);
+    const bytes = Utilities.base64Decode(file.data);
+    const blob = Utilities.newBlob(bytes, file.type || "application/octet-stream", safeName);
+    const savedFile = folder.createFile(blob);
+    return savedFile.getUrl();
+  } catch (err) {
+    return "Receipt upload failed: " + String(err);
+  }
+}
+
+function getReceiptFolder_() {
+  const folders = DriveApp.getFoldersByName(RECEIPT_FOLDER_NAME);
+  if (folders.hasNext()) return folders.next();
+  return DriveApp.createFolder(RECEIPT_FOLDER_NAME);
+}
+
+function safeFileName_(name) {
+  return String(name || "receipt")
+    .replace(/[\\/:*?"<>|#%{}~&]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 120);
+}
+
+function appendStatus_(orderId, status, rider, note, when, receiptUrl) {
+  const sheet = getSheet_(STATUS_SHEET, ["Time", "Order ID", "Status", "Rider", "Note", "Receipt File"]);
+  sheet.appendRow([when || new Date(), orderId || "", status || "", rider || "", note || "", receiptUrl || ""]);
 }
 
 function getSheet_(name, headers) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   let sheet = ss.getSheetByName(name);
   if (!sheet) sheet = ss.insertSheet(name);
-  if (sheet.getLastRow() === 0) sheet.appendRow(headers);
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(headers);
+  } else {
+    ensureHeaders_(sheet, headers);
+  }
   return sheet;
+}
+
+function ensureHeaders_(sheet, headers) {
+  const lastColumn = Math.max(sheet.getLastColumn(), 1);
+  const existing = sheet.getRange(1, 1, 1, lastColumn).getValues()[0].map(String);
+  headers.forEach((header) => {
+    if (existing.indexOf(header) === -1) {
+      sheet.getRange(1, sheet.getLastColumn() + 1).setValue(header);
+      existing.push(header);
+    }
+  });
 }
 
 function orderHeaders_() {
   return [
     "Order ID", "Created Time", "Updated Time", "Type", "Status", "Customer Name", "Phone",
     "Area", "Address", "Landmark", "Map", "Items", "Payment", "Delivery Time",
-    "Assigned Rider", "Source", "Full Message", "Raw JSON"
+    "Assigned Rider", "Source", "Full Message", "Raw JSON", "Receipt File"
   ];
 }
 
