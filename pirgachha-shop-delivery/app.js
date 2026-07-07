@@ -13,6 +13,7 @@ const CONFIG = {
   // Paste your Google Apps Script Web App URL here after setup.
   // Example: https://script.google.com/macros/s/AKfycb.../exec
   googleScriptUrl: "https://script.google.com/macros/s/AKfycbwbJ7SPcvQymb1eeXurRaqniqTjCRIOhXKh1jYcdmmbc3QVV3JPE6LEYGqIGvpU1XqA/exec",
+  maxReceiptUploadMb: 5,
   restaurants: [
     "Select restaurant",
     "Restaurant 1 - edit name",
@@ -37,14 +38,59 @@ function showToast(message) {
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 2400);
 }
+function isAttachedFile(value) {
+  return value instanceof File && value.name && value.size > 0;
+}
 function readableFileValue(value) {
-  if (value instanceof File) return value.name ? value.name : "Not attached";
+  if (value instanceof File) return isAttachedFile(value) ? value.name : "Not attached";
   return value;
 }
 function formDataObject(form) {
   const obj = {};
   const fd = new FormData(form);
   for (const [key, value] of fd.entries()) obj[key] = readableFileValue(value);
+  return obj;
+}
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = String(reader.result || "");
+      resolve({
+        name: file.name,
+        type: file.type || "application/octet-stream",
+        size: file.size,
+        data: result.includes(",") ? result.split(",")[1] : result
+      });
+    };
+    reader.onerror = () => reject(new Error("Could not read attached file"));
+    reader.readAsDataURL(file);
+  });
+}
+async function collectFormData(form) {
+  const obj = {};
+  const fd = new FormData(form);
+  for (const [key, value] of fd.entries()) {
+    if (value instanceof File) {
+      if (!isAttachedFile(value)) {
+        obj[key] = "Not attached";
+        continue;
+      }
+      obj[key] = value.name;
+      if (key === "receiptFile") {
+        const maxBytes = CONFIG.maxReceiptUploadMb * 1024 * 1024;
+        if (value.size > maxBytes) {
+          throw new Error(`Receipt file is too large. Maximum ${CONFIG.maxReceiptUploadMb} MB allowed.`);
+        }
+        obj.receiptFileName = value.name;
+        obj.receiptFileType = value.type || "application/octet-stream";
+        obj.receiptFileSize = value.size;
+        obj.receiptFile = await fileToBase64(value);
+      }
+    } else {
+      obj[key] = value;
+    }
+  }
   return obj;
 }
 function clean(value) {
@@ -90,7 +136,7 @@ function buildMessage(type, data) {
   }
 
   if (type === "rider") {
-    return `${header}\nTime: ${time}\n\n${line("Order ID", data.orderId)}\n${line("Rider", data.rider)}\n${line("Status", data.status)}\n${line("Note", data.note)}\n\nUpdated from rider form.`;
+    return `${header}\nTime: ${time}\n\n${line("Order ID", data.orderId)}\n${line("Rider", data.rider)}\n${line("Status", data.status)}\n${line("Money Receipt", data.receiptFileName || data.receiptFile || "Not attached")}\n${line("Note", data.note)}\n\nUpdated from rider form.`;
   }
 
   return `${header}\nTime: ${time}\n\n${JSON.stringify(data, null, 2)}`;
@@ -131,13 +177,13 @@ function showShareModal(type, message, databaseResult = null) {
       <div class="modal-head">
         <div>
           <p class="eyebrow">Choose sending option</p>
-          <h2 id="modalTitle">Your order is ready</h2>
-          <p class="copy-note">Select any option below. We will receive the order through the app/account you choose.</p>
+          <h2 id="modalTitle">Your update is ready</h2>
+          <p class="copy-note">Select any option below. We will receive the order/update through the app/account you choose.</p>
           ${databaseNotice(databaseResult)}
         </div>
         <button class="close-btn" type="button" aria-label="Close">×</button>
       </div>
-      <h3>Order Preview</h3>
+      <h3>Preview</h3>
       <div class="order-preview">${escapeHtml(message)}</div>
       <div class="share-grid">
         <button class="share-btn" type="button" data-action="native"><span>📲</span> Share to Any App</button>
@@ -148,7 +194,7 @@ function showShareModal(type, message, databaseResult = null) {
         <button class="share-btn" type="button" data-action="call"><span>📞</span> Call Company</button>
         <button class="share-btn" type="button" data-action="copy"><span>📋</span> Copy for IMO/Other</button>
       </div>
-      <p class="copy-note">Tip: For IMO or another app, use “Share to Any App” if available. Otherwise use “Copy for IMO/Other” and paste the order text manually.</p>
+      <p class="copy-note">Tip: For IMO or another app, use “Share to Any App” if available. Otherwise use “Copy for IMO/Other” and paste the text manually.</p>
     </div>`;
 
   modal.classList.remove("hidden");
@@ -167,7 +213,7 @@ function showShareModal(type, message, databaseResult = null) {
           catch { /* User cancelled or sharing failed */ }
         } else {
           await copyText(message);
-          alert("Your browser does not support direct app sharing. The order text was copied. Paste it into IMO, Facebook, Messenger, or any other app.");
+          alert("Your browser does not support direct app sharing. The text was copied. Paste it into IMO, Facebook, Messenger, or any other app.");
         }
       }
       if (action === "whatsapp") openUrl(whatsappUrl);
@@ -206,7 +252,6 @@ function setupRestaurantOptions() {
   });
 }
 
-
 function databaseReady() {
   return Boolean(CONFIG.googleScriptUrl && CONFIG.googleScriptUrl.startsWith("https://script.google.com/"));
 }
@@ -233,6 +278,10 @@ async function sendToDatabase(type, data, message) {
     payment: clean(data.payment),
     deliveryTime: clean(data.time),
     items: clean(data.items),
+    receiptFileName: clean(data.receiptFileName || data.receiptFile),
+    receiptFileType: clean(data.receiptFileType),
+    receiptFileSize: data.receiptFileSize || "",
+    receiptFile: data.receiptFile || null,
     fullMessage: message,
     rawData: data,
     clientTime: new Date().toISOString(),
@@ -256,9 +305,9 @@ async function sendToDatabase(type, data, message) {
 function databaseNotice(result) {
   if (!result || !result.enabled) return "";
   if (result.sent) {
-    return `<div class="db-notice success">✅ Order saved to the database. Please also send it through WhatsApp/SMS/email/call so the team can confirm faster.</div>`;
+    return `<div class="db-notice success">✅ Saved to the database. If a receipt was attached, it will be saved after the Google Apps Script backend is updated.</div>`;
   }
-  return `<div class="db-notice warning">⚠️ Database save may have failed. Please send the order using one option below.</div>`;
+  return `<div class="db-notice warning">⚠️ Database save may have failed. Please send the order/update using one option below.</div>`;
 }
 
 function setupForms() {
@@ -268,13 +317,25 @@ function setupForms() {
       const submitButton = form.querySelector('button[type="submit"]');
       const originalText = submitButton ? submitButton.textContent : "";
       const type = form.dataset.orderType;
-      const data = formDataObject(form);
-      const message = buildMessage(type, data);
 
       if (submitButton) {
         submitButton.disabled = true;
-        submitButton.textContent = databaseReady() ? "Saving order..." : "Preparing order...";
+        submitButton.textContent = databaseReady() ? "Saving..." : "Preparing...";
       }
+
+      let data;
+      try {
+        data = await collectFormData(form);
+      } catch (error) {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
+        alert(error.message || "Could not read the attached file.");
+        return;
+      }
+
+      const message = buildMessage(type, data);
 
       const dbResult = await sendToDatabase(type, data, message);
 
@@ -319,7 +380,6 @@ function setupLocationButtons() {
     });
   });
 }
-
 
 function loadJsonp(url, params = {}) {
   return new Promise((resolve, reject) => {
