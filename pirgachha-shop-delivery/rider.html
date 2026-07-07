@@ -11,15 +11,15 @@
 <body>
   <header class="site-header">
     <div class="wrap nav-wrap">
-      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
-      <a class="ghost" href="index.html">Home</a>
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Rider App</h1><p>Status update • Receipt upload • Delivery proof</p></div></a>
+      <a class="ghost" href="index.html">Customer App</a>
     </div>
   </header>
   <main class="page-main">
     <section class="wrap page-heading rider-heading">
       <p class="eyebrow">Delivery Rider</p>
       <h2>Update order status quickly.</h2>
-      <p>Riders can send accepted, collected, on-the-way, delivered, or problem updates to the company.</p>
+      <p>Riders can update delivery status and attach the shopping money receipt after purchasing items.</p>
     </section>
     <section class="wrap order-shell simple-shell">
       <form id="riderForm" class="order-form fancy-form" data-order-type="rider">
@@ -40,8 +40,12 @@
             <option>Cancelled/Problem</option>
           </select>
         </label>
+        <label>Money Receipt Photo/File <span class="muted">optional</span>
+          <input name="receiptFile" type="file" accept="image/*,.pdf" />
+          <span class="help-text">Attach the shopping receipt after purchasing items. Image or PDF, maximum 5 MB.</span>
+        </label>
         <label>Note <span class="muted">optional</span>
-          <textarea name="note" rows="3" placeholder="Payment collected, customer unavailable, delivery proof photo sent separately, etc."></textarea>
+          <textarea name="note" rows="3" placeholder="Payment collected, total shopping cost, customer unavailable, delivery proof note, etc."></textarea>
         </label>
         <button class="btn big-submit" type="submit">Send Rider Update</button>
       </form>
