@@ -403,7 +403,7 @@ function loadJsonp(url, params = {}) {
 
 function renderTrackingResult(resultBox, result) {
   if (!result || !result.ok) {
-    resultBox.innerHTML = `<div class="track-card error"><strong>Order not found</strong><p>${escapeHtml(result && result.message ? result.message : "Please check the Order ID and phone number, or call the company.")}</p></div>`;
+    resultBox.innerHTML = `<div class="track-card error"><strong>Order not found</strong><p>${escapeHtml(result && result.message ? result.message : "Please check the Order ID, or call the company.")}</p></div>`;
     return;
   }
   resultBox.innerHTML = `
@@ -441,8 +441,7 @@ function setupTrackingForm() {
       const data = formDataObject(form);
       const result = await loadJsonp(CONFIG.googleScriptUrl, {
         action: "track",
-        orderId: clean(data.orderId),
-        phone: clean(data.phone)
+        orderId: clean(data.orderId)
       });
       renderTrackingResult(resultBox, result);
     } catch (error) {
