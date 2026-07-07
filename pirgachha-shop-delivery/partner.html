@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Partner Registration | Pirgachha Shop & Delivery</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="wrap page-heading partner-heading">
+      <p class="eyebrow">Partner</p>
+      <h2>Register your shop, restaurant, or pharmacy.</h2>
+      <p>Submit your business information and choose how to send it to our company.</p>
+    </section>
+    <section class="wrap order-shell simple-shell">
+      <form id="partnerForm" class="order-form fancy-form" data-order-type="partner">
+        <div class="form-step"><span>1</span><strong>Business Information</strong></div>
+        <div class="grid two">
+          <label>Business Name
+            <input name="business" type="text" required placeholder="Shop/restaurant/pharmacy name" />
+          </label>
+          <label>Owner/Manager Name
+            <input name="owner" type="text" required placeholder="Name" />
+          </label>
+        </div>
+        <div class="grid two">
+          <label>Mobile Number
+            <input name="phone" type="tel" required placeholder="01XXXXXXXXX" />
+          </label>
+          <label>Business Type
+            <select name="type" required>
+              <option>Restaurant</option>
+              <option>Grocery Store</option>
+              <option>Pharmacy / Medicine Shop</option>
+              <option>Bakery/Sweet Shop</option>
+              <option>Stationery</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label>Business Address
+          <textarea name="address" required rows="3" placeholder="Business location"></textarea>
+        </label>
+        <label>Products/Menu Summary
+          <textarea name="items" rows="5" placeholder="Popular food/items, approximate price, opening hours, preparation time"></textarea>
+        </label>
+        <button class="btn big-submit" type="submit">Send Partner Request</button>
+      </form>
+    </section>
+  </main>
+  <div id="shareModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  <script src="app.js"></script>
+</body>
+</html>

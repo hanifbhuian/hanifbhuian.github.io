@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Basic Medicine Order | Pirgachha Shop & Delivery</title>
+  <meta name="description" content="Basic medicine order form for Pirgachha Shop & Delivery." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="wrap page-poster medicine-poster">
+      <img src="assets/images/medicine-banner.png" alt="Basic medicine delivery banner" />
+    </section>
+    <section class="wrap page-heading medicine-heading">
+      <p class="eyebrow">Basic Medicine Order</p>
+      <h2>Order basic pharmacy items from local pharmacies.</h2>
+      <p>Use this for basic medicine and health items only. Prescription medicine should be handled by a licensed pharmacy and may require a valid prescription.</p>
+    </section>
+
+    <section class="wrap order-shell">
+      <aside class="form-tips warning-tip">
+        <div class="tip-icon">💊</div>
+        <h3>Important safety note</h3>
+        <ul>
+          <li>This service is for delivery support only, not medical advice.</li>
+          <li>Do not order antibiotics or controlled medicine without a valid prescription.</li>
+          <li>For emergency health problems, call a doctor, hospital, or emergency service directly.</li>
+          <li>We can collect items only from registered/local pharmacies.</li>
+        </ul>
+      </aside>
+
+      <form id="medicineForm" class="order-form fancy-form" data-order-type="medicine">
+        <div class="form-step"><span>1</span><strong>Customer Information</strong></div>
+        <div class="grid two">
+          <label>Customer Name
+            <input name="name" type="text" required placeholder="Example: Rahima Begum" />
+          </label>
+          <label>Mobile Number
+            <input name="phone" type="tel" required placeholder="01XXXXXXXXX" />
+          </label>
+        </div>
+        <label>Who is the medicine for?
+          <select name="patient">
+            <option>For myself</option>
+            <option>For family member</option>
+            <option>For child</option>
+            <option>For elderly person</option>
+          </select>
+        </label>
+
+        <div class="form-step"><span>2</span><strong>Medicine / Health Item Details</strong></div>
+        <label>Medicine or Item List
+          <textarea name="items" required rows="6" placeholder="Example:\nParacetamol 500 mg 1 strip\nORS 5 packets\nBandage 1 roll\nThermometer 1 pcs"></textarea>
+        </label>
+        <div class="grid two">
+          <label>Preferred Pharmacy <span class="muted">optional</span>
+            <input name="pharmacy" type="text" placeholder="Example: Any pharmacy near Pirgachha Bazar" />
+          </label>
+          <label>Urgency
+            <select name="urgency" required>
+              <option>Normal delivery</option>
+              <option>Urgent - call me first</option>
+              <option>Scheduled delivery</option>
+            </select>
+          </label>
+        </div>
+        <label>Prescription Photo <span class="muted">if needed</span>
+          <input name="photoName" type="file" accept="image/*,.pdf" />
+          <small class="help-text">This file will not upload automatically in the free version. Send it through your selected app if the pharmacy requires it.</small>
+        </label>
+
+        <div class="form-step"><span>3</span><strong>Delivery Address</strong></div>
+        <div class="grid two">
+          <label>Village/Area
+            <input name="area" type="text" required placeholder="Example: Pirgachha Bazar / Annadanagar" />
+          </label>
+          <label>Landmark
+            <input name="landmark" type="text" required placeholder="Near school/mosque/bazar/clinic" />
+          </label>
+        </div>
+        <label>Full Delivery Address
+          <textarea name="address" required rows="3" placeholder="House/road/para/union details"></textarea>
+        </label>
+        <div class="location-box">
+          <button class="btn outline location-btn" type="button" data-target="medicineLocation">📍 Add My Location</button>
+          <input id="medicineLocation" name="map" type="url" placeholder="Location link will appear here, or paste Google Maps link manually" />
+          <small class="help-text">The browser may ask permission. Location works best after the site is hosted online with HTTPS.</small>
+        </div>
+
+        <div class="form-step"><span>4</span><strong>Payment & Confirmation</strong></div>
+        <div class="grid two">
+          <label>Payment Method
+            <select name="payment" required>
+              <option>Cash on Delivery</option>
+              <option>bKash</option>
+              <option>Nagad</option>
+              <option>Call me before payment</option>
+            </select>
+          </label>
+          <label>Need Call Confirmation?
+            <select name="confirm" required>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+        </div>
+        <label>Health Note <span class="muted">optional</span>
+          <textarea name="note" rows="3" placeholder="Example: Need same brand / call if item is not available / do not replace without asking"></textarea>
+        </label>
+        <button class="btn big-submit" type="submit">Send Order</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="shareModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  <script src="app.js"></script>
+</body>
+</html>

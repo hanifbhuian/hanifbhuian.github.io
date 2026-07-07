@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Rider Update | Pirgachha Shop & Delivery</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="wrap page-heading rider-heading">
+      <p class="eyebrow">Delivery Rider</p>
+      <h2>Update order status quickly.</h2>
+      <p>Riders can send accepted, collected, on-the-way, delivered, or problem updates to the company.</p>
+    </section>
+    <section class="wrap order-shell simple-shell">
+      <form id="riderForm" class="order-form fancy-form" data-order-type="rider">
+        <div class="grid two">
+          <label>Order ID
+            <input name="orderId" type="text" required placeholder="Example: PSD-G-123456" />
+          </label>
+          <label>Rider Name
+            <input name="rider" type="text" required placeholder="Rider name" />
+          </label>
+        </div>
+        <label>Status
+          <select name="status" required>
+            <option>Accepted order</option>
+            <option>Collected from shop/restaurant/pharmacy</option>
+            <option>On the way</option>
+            <option>Delivered</option>
+            <option>Cancelled/Problem</option>
+          </select>
+        </label>
+        <label>Note <span class="muted">optional</span>
+          <textarea name="note" rows="3" placeholder="Payment collected, customer unavailable, delivery proof photo sent separately, etc."></textarea>
+        </label>
+        <button class="btn big-submit" type="submit">Send Rider Update</button>
+      </form>
+    </section>
+  </main>
+  <div id="shareModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  <script src="app.js"></script>
+</body>
+</html>

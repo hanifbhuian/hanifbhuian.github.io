@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Restaurant Order | Pirgachha Shop & Delivery</title>
+  <meta name="description" content="Restaurant food order form for Pirgachha Shop & Delivery." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="wrap page-poster restaurant-poster">
+      <img src="assets/images/restaurant-banner.png" alt="Restaurant food delivery banner" />
+    </section>
+    <section class="wrap page-heading restaurant-heading">
+      <p class="eyebrow">Restaurant Food Order</p>
+      <h2>Order food from your selected local restaurant.</h2>
+      <p>Select a restaurant, write food items and quantity, then send the order using your preferred method.</p>
+    </section>
+
+    <section class="wrap order-shell">
+      <aside class="form-tips">
+        <div class="tip-icon">🍛</div>
+        <h3>Food order tips</h3>
+        <ul>
+          <li>Write item names and quantities clearly.</li>
+          <li>Mention spicy/less spicy or other food instructions.</li>
+          <li>For school/college or office delivery, mention gate/building details.</li>
+          <li>Large orders may need phone confirmation.</li>
+        </ul>
+      </aside>
+
+      <form id="restaurantForm" class="order-form fancy-form" data-order-type="restaurant">
+        <div class="form-step"><span>1</span><strong>Customer Information</strong></div>
+        <div class="grid two">
+          <label>Customer Name
+            <input name="name" type="text" required placeholder="Example: Shakil Ahmed" />
+          </label>
+          <label>Mobile Number
+            <input name="phone" type="tel" required placeholder="01XXXXXXXXX" />
+          </label>
+        </div>
+
+        <div class="form-step"><span>2</span><strong>Food Details</strong></div>
+        <label>Restaurant
+          <select name="restaurant" id="restaurantSelect" required></select>
+        </label>
+        <label>Food Items and Quantity
+          <textarea name="items" required rows="6" placeholder="Example:\nChicken burger 2 pcs\nChicken biryani 1 plate\nTea 2 cups"></textarea>
+        </label>
+        <div class="grid two">
+          <label>Spice/Preparation
+            <select name="preparation">
+              <option>Normal</option>
+              <option>Less spicy</option>
+              <option>Extra spicy</option>
+              <option>No onion</option>
+              <option>Call me to confirm</option>
+            </select>
+          </label>
+          <label>Need Cutlery?
+            <select name="cutlery">
+              <option>No</option>
+              <option>Yes</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-step"><span>3</span><strong>Delivery Address</strong></div>
+        <div class="grid two">
+          <label>Village/Area
+            <input name="area" type="text" required placeholder="Example: Pirgachha Bazar / College Road" />
+          </label>
+          <label>Landmark
+            <input name="landmark" type="text" required placeholder="Near school/mosque/bazar/clinic" />
+          </label>
+        </div>
+        <label>Full Delivery Address
+          <textarea name="address" required rows="3" placeholder="House/hostel/office/classroom/gate details"></textarea>
+        </label>
+        <div class="location-box">
+          <button class="btn outline location-btn" type="button" data-target="restaurantLocation">📍 Add My Location</button>
+          <input id="restaurantLocation" name="map" type="url" placeholder="Location link will appear here, or paste Google Maps link manually" />
+          <small class="help-text">The browser may ask permission. Location works best after the site is hosted online with HTTPS.</small>
+        </div>
+
+        <div class="form-step"><span>4</span><strong>Payment & Confirmation</strong></div>
+        <div class="grid two">
+          <label>Payment Method
+            <select name="payment" required>
+              <option>Cash on Delivery</option>
+              <option>bKash</option>
+              <option>Nagad</option>
+              <option>Call me before payment</option>
+            </select>
+          </label>
+          <label>Need Call Confirmation?
+            <select name="confirm" required>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+        </div>
+        <label>Special Instruction <span class="muted">optional</span>
+          <textarea name="note" rows="3" placeholder="Example: Deliver to college gate / call after reaching / please keep food hot"></textarea>
+        </label>
+        <button class="btn big-submit" type="submit">Send Order</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="shareModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  <script src="app.js"></script>
+</body>
+</html>

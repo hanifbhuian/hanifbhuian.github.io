@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Grocery Order | Pirgachha Shop & Delivery</title>
+  <meta name="description" content="Grocery order form for Pirgachha Shop & Delivery." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="wrap page-poster grocery-poster">
+      <img src="assets/images/grocery-banner.png" alt="Fresh grocery delivery banner" />
+    </section>
+    <section class="wrap page-heading grocery-heading">
+      <p class="eyebrow">Grocery Order</p>
+      <h2>Tell us what you need from local grocery shops.</h2>
+      <p>Write the product list, add your delivery address, choose payment method, then select how you want to send the order.</p>
+    </section>
+
+    <section class="wrap order-shell">
+      <aside class="form-tips">
+        <div class="tip-icon">🛒</div>
+        <h3>Before submitting</h3>
+        <ul>
+          <li>Write quantity clearly, such as rice 5 kg or egg 12 pcs.</li>
+          <li>Add a nearby landmark for faster delivery.</li>
+          <li>Use the location button if you want to share your phone location.</li>
+          <li>For handwritten list photos, send the photo after sharing the order message.</li>
+        </ul>
+      </aside>
+
+      <form id="groceryForm" class="order-form fancy-form" data-order-type="grocery">
+        <div class="form-step"><span>1</span><strong>Customer Information</strong></div>
+        <div class="grid two">
+          <label>Customer Name
+            <input name="name" type="text" required placeholder="Example: Md. Karim" />
+          </label>
+          <label>Mobile Number
+            <input name="phone" type="tel" required placeholder="01XXXXXXXXX" />
+          </label>
+        </div>
+        <label>Alternative Phone <span class="muted">optional</span>
+          <input name="altPhone" type="tel" placeholder="If your main number is unavailable" />
+        </label>
+
+        <div class="form-step"><span>2</span><strong>Grocery Details</strong></div>
+        <label>Product List
+          <textarea name="items" required rows="6" placeholder="Example:\nRice 5 kg\nEgg 12 pcs\nOnion 2 kg\nMilk 1 litre\nAarong butter 1 pcs"></textarea>
+        </label>
+        <div class="grid two">
+          <label>Preferred Shop <span class="muted">optional</span>
+            <input name="shop" type="text" placeholder="Example: Pirgachha Bazar grocery shop" />
+          </label>
+          <label>Budget Limit <span class="muted">optional</span>
+            <input name="budget" type="text" placeholder="Example: Around ৳800" />
+          </label>
+        </div>
+        <label>Grocery List Photo <span class="muted">optional</span>
+          <input name="photoName" type="file" accept="image/*" />
+          <small class="help-text">This file will not upload automatically in the free version. After submitting, send the photo through your selected app if needed.</small>
+        </label>
+
+        <div class="form-step"><span>3</span><strong>Delivery Address</strong></div>
+        <div class="grid two">
+          <label>Village/Area
+            <input name="area" type="text" required placeholder="Example: Pirgachha Bazar / Itakumari / Annadanagar" />
+          </label>
+          <label>Landmark
+            <input name="landmark" type="text" required placeholder="Near mosque/school/clinic/shop" />
+          </label>
+        </div>
+        <label>Full Delivery Address
+          <textarea name="address" required rows="3" placeholder="House details, road/para, union, upazila"></textarea>
+        </label>
+        <div class="location-box">
+          <button class="btn outline location-btn" type="button" data-target="groceryLocation">📍 Add My Location</button>
+          <input id="groceryLocation" name="map" type="url" placeholder="Location link will appear here, or paste Google Maps link manually" />
+          <small class="help-text">The browser may ask permission. Location works best after the site is hosted online with HTTPS.</small>
+        </div>
+
+        <div class="form-step"><span>4</span><strong>Payment & Delivery Time</strong></div>
+        <div class="grid two">
+          <label>Payment Method
+            <select name="payment" required>
+              <option>Cash on Delivery</option>
+              <option>bKash</option>
+              <option>Nagad</option>
+              <option>Call me before payment</option>
+            </select>
+          </label>
+          <label>Delivery Time
+            <select name="time" required>
+              <option>As soon as possible</option>
+              <option>Today afternoon</option>
+              <option>Today evening</option>
+              <option>Tomorrow morning</option>
+              <option>Scheduled - call me</option>
+            </select>
+          </label>
+        </div>
+        <label>Extra Note <span class="muted">optional</span>
+          <textarea name="note" rows="3" placeholder="Example: Please call before delivery / avoid low-quality product / need fresh items"></textarea>
+        </label>
+        <button class="btn big-submit" type="submit">Send Order</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="shareModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  <script src="app.js"></script>
+</body>
+</html>
