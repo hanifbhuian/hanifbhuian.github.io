@@ -7,17 +7,21 @@
 .service-card {
   border-radius: 18px !important;
   box-shadow: 0 10px 26px rgba(15, 118, 110, 0.10) !important;
+  min-width: 0 !important;
 }
 
 .service-card img {
-  aspect-ratio: 4 / 3 !important;
-  object-fit: cover !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: contain !important;
+  background: #f8fafc !important;
+  padding: 4px !important;
 }
 
 .service-card div {
   padding: 12px !important;
   gap: 4px !important;
   text-align: center;
+  min-width: 0 !important;
 }
 
 .service-icon {
@@ -31,6 +35,7 @@
 .service-card h3 {
   font-size: 17px !important;
   line-height: 1.15 !important;
+  overflow-wrap: anywhere !important;
 }
 
 .service-card p {
@@ -46,19 +51,24 @@
 @media (max-width: 860px) {
   .service-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 8px !important;
+    gap: 7px !important;
   }
 
   .service-card {
-    border-radius: 15px !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
   }
 
   .service-card img {
-    aspect-ratio: 1 / 1 !important;
+    height: 58px !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    padding: 5px !important;
+    background: #f8fafc !important;
   }
 
   .service-card div {
-    padding: 8px 6px !important;
+    padding: 7px 4px 8px !important;
   }
 
   .service-icon,
@@ -70,6 +80,11 @@
   .service-card h3 {
     font-size: 12px !important;
     line-height: 1.15 !important;
+    margin: 0 !important;
+    min-height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .choose-service {
@@ -83,14 +98,20 @@
 
 @media (max-width: 390px) {
   .service-grid {
-    gap: 6px !important;
+    gap: 5px !important;
+  }
+
+  .service-card img {
+    height: 50px !important;
+    padding: 4px !important;
   }
 
   .service-card h3 {
-    font-size: 11px !important;
+    font-size: 10.5px !important;
+    min-height: 26px !important;
   }
 
   .service-card div {
-    padding: 7px 4px !important;
+    padding: 6px 3px 7px !important;
   }
 }
