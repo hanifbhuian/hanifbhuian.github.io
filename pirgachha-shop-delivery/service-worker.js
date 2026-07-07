@@ -1,4 +1,4 @@
-const CACHE_NAME = "psd-delivery-v12-numeric-order-id-20260707";
+const CACHE_NAME = "psd-delivery-v13-language-switcher-20260707";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
@@ -13,6 +13,7 @@ const FILES_TO_CACHE = [
   "./styles.css",
   "./home-compact.css",
   "./app.js",
+  "./language.js",
   "./manifest.json",
   "./manifest-rider.json",
   "./icon-192.svg",
