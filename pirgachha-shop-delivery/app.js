@@ -26,8 +26,8 @@ const CONFIG = {
 
 function qs(selector, root = document) { return root.querySelector(selector); }
 function qsa(selector, root = document) { return [...root.querySelectorAll(selector)]; }
-function orderId(prefix) {
-  return `${prefix}-${Date.now().toString().slice(-6)}-${Math.floor(Math.random() * 90 + 10)}`;
+function orderId() {
+  return `${Date.now().toString().slice(-8)}${Math.floor(Math.random() * 90 + 10)}`;
 }
 function showToast(message) {
   const old = qs(".toast");
@@ -114,7 +114,7 @@ function prefixForType(type) {
 }
 
 function buildMessage(type, data) {
-  data.orderId = data.orderId || orderId(prefixForType(type));
+  data.orderId = data.orderId || orderId();
   const id = data.orderId;
   const header = labelForType(type);
   const time = new Date().toLocaleString();
