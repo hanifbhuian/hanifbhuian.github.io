@@ -1,4 +1,4 @@
-const CACHE_NAME = "psd-delivery-v11-track-id-only-20260707";
+const CACHE_NAME = "psd-delivery-v12-numeric-order-id-20260707";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
