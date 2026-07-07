@@ -1,4 +1,4 @@
-const NOTIFICATION_EMAIL = "yourbusiness@email.com";
+const NOTIFICATION_EMAIL = "hbgadgetb@gmail.com";
 const ORDERS_SHEET = "Orders";
 const STATUS_SHEET = "Status Updates";
 const RECEIPT_FOLDER_NAME = "Pirgachha Shop Delivery Receipts";
