@@ -12,7 +12,7 @@ const CONFIG = {
   facebookMessengerUrl: "https://m.me/yourpage",
   // Paste your Google Apps Script Web App URL here after setup.
   // Example: https://script.google.com/macros/s/AKfycb.../exec
-  googleScriptUrl: "",
+  googleScriptUrl: "https://script.google.com/macros/s/AKfycbwbJ7SPcvQymb1eeXurRaqniqTjCRIOhXKh1jYcdmmbc3QVV3JPE6LEYGqIGvpU1XqA/exec",
   restaurants: [
     "Select restaurant",
     "Restaurant 1 - edit name",
