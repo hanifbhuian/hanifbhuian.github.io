@@ -1,4 +1,4 @@
-const CACHE_NAME = "psd-delivery-v7-rider-app-20260707";
+const CACHE_NAME = "psd-delivery-v8-compact-home-20260707";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
@@ -11,6 +11,7 @@ const FILES_TO_CACHE = [
   "./track.html",
   "./privacy.html",
   "./styles.css",
+  "./home-compact.css",
   "./app.js",
   "./manifest.json",
   "./manifest-rider.json",
