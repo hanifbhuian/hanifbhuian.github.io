@@ -15,7 +15,7 @@ function doPost(e) {
 
 function doGet(e) {
   const params = e.parameter || {};
-  const result = params.action === "track" ? trackOrder_(params.orderId, params.phone) : { ok: true, message: "Pirgachha Shop & Delivery backend is running." };
+  const result = params.action === "track" ? trackOrder_(params.orderId) : { ok: true, message: "Pirgachha Shop & Delivery backend is running." };
   return jsonOutput_(result, params.callback);
 }
 
@@ -66,15 +66,18 @@ function updateStatus_(payload) {
   return { ok: found, orderId: orderId, status: status, rider: rider, receiptUrl: receiptUrl, message: found ? "Customer order status updated" : "Order ID not found in Orders sheet, but status note was saved" };
 }
 
-function trackOrder_(orderId, phone) {
+function trackOrder_(orderId) {
   const sheet = getSheet_(ORDERS_SHEET, orderHeaders_());
   const values = sheet.getDataRange().getValues();
   const id = normalizeOrderId_(orderId);
-  const phoneDigits = onlyDigits_(phone);
+
+  if (!id || id === "-") {
+    return { ok: false, message: "Please enter a valid Order ID." };
+  }
 
   for (let i = 1; i < values.length; i++) {
     const row = values[i];
-    if (normalizeOrderId_(row[0]) === id && phoneMatches_(onlyDigits_(row[6]), phoneDigits)) {
+    if (normalizeOrderId_(row[0]) === id) {
       const latest = latestStatusForOrder_(id);
       return {
         ok: true,
@@ -84,13 +87,12 @@ function trackOrder_(orderId, phone) {
         type: row[3],
         status: latest.status || row[4] || "Order Received",
         customerName: row[5],
-        phone: row[6],
         area: row[7],
         rider: latest.rider || row[14] || "Not assigned yet"
       };
     }
   }
-  return { ok: false, message: "No matching order found. Check Order ID and phone number." };
+  return { ok: false, message: "No matching order found. Check the Order ID." };
 }
 
 function latestStatusForOrder_(orderId) {
@@ -173,16 +175,6 @@ function jsonOutput_(data, callback) {
 
 function normalizeOrderId_(value) {
   return String(value || "").trim().toUpperCase().replace(/\s+/g, "");
-}
-
-function onlyDigits_(value) {
-  return String(value || "").replace(/\D/g, "");
-}
-
-function phoneMatches_(savedPhone, inputPhone) {
-  if (!savedPhone || !inputPhone) return false;
-  if (savedPhone === inputPhone) return true;
-  return savedPhone.slice(-6) === inputPhone.slice(-6);
 }
 
 function dateText_(value) {
