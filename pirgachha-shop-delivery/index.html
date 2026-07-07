@@ -19,7 +19,7 @@
           <p>Grocery • Food • Basic Medicine • Local Delivery</p>
         </div>
       </a>
-      <button id="installBtn" class="ghost hidden" type="button">Install App</button>
+      <button id="manualInstallBtn" class="ghost" type="button">Install App</button>
     </div>
   </header>
 
@@ -112,5 +112,30 @@
   </footer>
 
   <script src="app.js"></script>
+  <script>
+    (function () {
+      var installPrompt = null;
+      var btn = document.getElementById('manualInstallBtn');
+      window.addEventListener('beforeinstallprompt', function (event) {
+        event.preventDefault();
+        installPrompt = event;
+      });
+      if (!btn) return;
+      btn.addEventListener('click', async function () {
+        var isInstalled = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        if (isInstalled) {
+          alert('This website is already installed as an app on this device.');
+          return;
+        }
+        if (installPrompt) {
+          installPrompt.prompt();
+          await installPrompt.userChoice;
+          installPrompt = null;
+          return;
+        }
+        alert('Install instructions:\n\nChrome or Edge on computer: click the install icon in the address bar, or open the browser menu and choose Install page as app.\n\nAndroid Chrome: tap the three-dot menu, then Add to Home screen.\n\niPhone Safari: tap Share, then Add to Home Screen.');
+      });
+    })();
+  </script>
 </body>
 </html>
