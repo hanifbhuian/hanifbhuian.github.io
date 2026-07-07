@@ -21,7 +21,7 @@
     <section class="wrap page-heading">
       <p class="eyebrow">Customer Tracking</p>
       <h2>Track your order status.</h2>
-      <p>Enter your Order ID only. No phone number is required.</p>
+      <p>Enter your numeric Order ID only. No phone number is required.</p>
     </section>
 
     <section class="wrap order-shell simple-shell">
@@ -30,7 +30,7 @@
       </div>
       <form id="trackForm" class="order-form fancy-form">
         <label>Order ID
-          <input name="orderId" type="text" required placeholder="Example: PSD-G-123456-10" autocomplete="off" />
+          <input name="orderId" type="text" inputmode="numeric" pattern="[0-9]*" required placeholder="Example: 1234567890" autocomplete="off" />
         </label>
         <button class="btn big-submit" type="submit">Check Status</button>
       </form>
