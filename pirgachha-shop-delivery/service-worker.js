@@ -1,4 +1,4 @@
-const CACHE_NAME = "psd-delivery-v3";
+const CACHE_NAME = "psd-delivery-v5";
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const FILES_TO_CACHE = [
   "./delivery.html",
   "./partner.html",
   "./rider.html",
+  "./track.html",
   "./privacy.html",
   "./styles.css",
   "./app.js",

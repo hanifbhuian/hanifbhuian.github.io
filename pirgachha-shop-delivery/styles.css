@@ -462,3 +462,50 @@ input[type="file"] { padding: 11px; background: #fbfefd; }
   .share-grid { grid-template-columns: 1fr; }
   .footer-grid { align-items: flex-start; flex-direction: column; }
 }
+
+/* Database and order tracking */
+.db-notice {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.db-notice.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #bbf7d0;
+}
+.db-notice.warning {
+  background: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+}
+.track-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-top: 16px;
+}
+.track-card h3 {
+  margin: 4px 0 12px;
+  font-size: 28px;
+  color: var(--brand);
+}
+.track-card p { margin: 8px 0; }
+.track-card.success { border-color: rgba(15,118,110,.25); }
+.track-card.error {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+.track-card.error strong { color: #9a3412; }
+.setup-warning {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>Track Order | Pirgachha Shop & Delivery</title>
+  <meta name="description" content="Track your Pirgachha Shop & Delivery order status." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html"><div class="brand-mark">PSD</div><div><h1>Pirgachha Shop & Delivery</h1><p>Grocery • Food • Basic Medicine • Local Delivery</p></div></a>
+      <a class="ghost" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="wrap page-poster">
+      <img src="assets/images/home-poster.png" alt="Pirgachha Shop & Delivery service banner" />
+    </section>
+    <section class="wrap page-heading">
+      <p class="eyebrow">Customer Tracking</p>
+      <h2>Track your order status.</h2>
+      <p>Enter your Order ID and phone number to see the latest delivery status.</p>
+    </section>
+
+    <section class="wrap order-shell simple-shell">
+      <div id="databaseSetupWarning" class="setup-warning hidden">
+        Tracking is prepared but not connected yet. Add the Google Apps Script Web App URL inside <strong>app.js</strong> first.
+      </div>
+      <form id="trackForm" class="order-form fancy-form">
+        <div class="grid two">
+          <label>Order ID
+            <input name="orderId" type="text" required placeholder="Example: PSD-G-123456-10" />
+          </label>
+          <label>Customer Mobile Number
+            <input name="phone" type="tel" required placeholder="01XXXXXXXXX" />
+          </label>
+        </div>
+        <button class="btn big-submit" type="submit">Check Status</button>
+      </form>
+      <div id="trackResult" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

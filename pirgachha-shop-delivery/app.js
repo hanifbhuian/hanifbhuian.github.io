@@ -10,6 +10,9 @@ const CONFIG = {
   smsNumber: "+8801XXXXXXXXX",
   emailAddress: "yourbusiness@email.com",
   facebookMessengerUrl: "https://m.me/yourpage",
+  // Paste your Google Apps Script Web App URL here after setup.
+  // Example: https://script.google.com/macros/s/AKfycb.../exec
+  googleScriptUrl: "",
   restaurants: [
     "Select restaurant",
     "Restaurant 1 - edit name",
@@ -65,7 +68,8 @@ function prefixForType(type) {
 }
 
 function buildMessage(type, data) {
-  const id = data.orderId || orderId(prefixForType(type));
+  data.orderId = data.orderId || orderId(prefixForType(type));
+  const id = data.orderId;
   const header = labelForType(type);
   const time = new Date().toLocaleString();
 
@@ -111,7 +115,7 @@ function openUrl(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-function showShareModal(type, message) {
+function showShareModal(type, message, databaseResult = null) {
   const modal = qs("#shareModal");
   if (!modal) return;
 
@@ -129,6 +133,7 @@ function showShareModal(type, message) {
           <p class="eyebrow">Choose sending option</p>
           <h2 id="modalTitle">Your order is ready</h2>
           <p class="copy-note">Select any option below. We will receive the order through the app/account you choose.</p>
+          ${databaseNotice(databaseResult)}
         </div>
         <button class="close-btn" type="button" aria-label="Close">×</button>
       </div>
@@ -201,13 +206,85 @@ function setupRestaurantOptions() {
   });
 }
 
+
+function databaseReady() {
+  return Boolean(CONFIG.googleScriptUrl && CONFIG.googleScriptUrl.startsWith("https://script.google.com/"));
+}
+
+async function sendToDatabase(type, data, message) {
+  if (!databaseReady()) {
+    return { enabled: false, sent: false };
+  }
+
+  const isStatusUpdate = type === "rider";
+  const payload = {
+    action: isStatusUpdate ? "updateStatus" : "createOrder",
+    orderId: data.orderId || "",
+    type,
+    status: isStatusUpdate ? clean(data.status) : "Order Received",
+    rider: isStatusUpdate ? clean(data.rider) : "",
+    note: clean(data.note),
+    customerName: clean(data.name),
+    phone: clean(data.phone),
+    area: clean(data.area),
+    address: clean(data.address),
+    landmark: clean(data.landmark),
+    map: clean(data.map),
+    payment: clean(data.payment),
+    deliveryTime: clean(data.time),
+    items: clean(data.items),
+    fullMessage: message,
+    rawData: data,
+    clientTime: new Date().toISOString(),
+    source: "Pirgachha website"
+  };
+
+  try {
+    await fetch(CONFIG.googleScriptUrl, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    return { enabled: true, sent: true };
+  } catch (error) {
+    console.warn("Database submit failed", error);
+    return { enabled: true, sent: false, error: true };
+  }
+}
+
+function databaseNotice(result) {
+  if (!result || !result.enabled) return "";
+  if (result.sent) {
+    return `<div class="db-notice success">✅ Order saved to the database. Please also send it through WhatsApp/SMS/email/call so the team can confirm faster.</div>`;
+  }
+  return `<div class="db-notice warning">⚠️ Database save may have failed. Please send the order using one option below.</div>`;
+}
+
 function setupForms() {
   qsa("form[data-order-type]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalText = submitButton ? submitButton.textContent : "";
       const type = form.dataset.orderType;
-      const message = buildMessage(type, formDataObject(form));
-      showShareModal(type, message);
+      const data = formDataObject(form);
+      const message = buildMessage(type, data);
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = databaseReady() ? "Saving order..." : "Preparing order...";
+      }
+
+      const dbResult = await sendToDatabase(type, data, message);
+
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalText;
+      }
+
+      if (dbResult.enabled && dbResult.sent) showToast("Saved to database");
+      showShareModal(type, message, dbResult);
     });
   });
 }
@@ -243,6 +320,78 @@ function setupLocationButtons() {
   });
 }
 
+
+function loadJsonp(url, params = {}) {
+  return new Promise((resolve, reject) => {
+    const callbackName = `psdTrackCallback_${Date.now()}_${Math.floor(Math.random() * 9999)}`;
+    const script = document.createElement("script");
+    const query = new URLSearchParams({ ...params, callback: callbackName });
+    window[callbackName] = (data) => {
+      resolve(data);
+      script.remove();
+      delete window[callbackName];
+    };
+    script.onerror = () => {
+      reject(new Error("Unable to load tracking data"));
+      script.remove();
+      delete window[callbackName];
+    };
+    script.src = `${url}${url.includes("?") ? "&" : "?"}${query.toString()}`;
+    document.body.appendChild(script);
+  });
+}
+
+function renderTrackingResult(resultBox, result) {
+  if (!result || !result.ok) {
+    resultBox.innerHTML = `<div class="track-card error"><strong>Order not found</strong><p>${escapeHtml(result && result.message ? result.message : "Please check the Order ID and phone number, or call the company.")}</p></div>`;
+    return;
+  }
+  resultBox.innerHTML = `
+    <div class="track-card success">
+      <p class="eyebrow">Order Status</p>
+      <h3>${escapeHtml(result.status || "Order Received")}</h3>
+      <p><strong>Order ID:</strong> ${escapeHtml(result.orderId || "-")}</p>
+      <p><strong>Type:</strong> ${escapeHtml(result.type || "-")}</p>
+      <p><strong>Updated:</strong> ${escapeHtml(result.updatedAt || "-")}</p>
+      <p><strong>Rider:</strong> ${escapeHtml(result.rider || "Not assigned yet")}</p>
+      <p class="help-text">For urgent updates, call or message the company directly.</p>
+    </div>`;
+}
+
+function setupTrackingForm() {
+  const form = qs("#trackForm");
+  const resultBox = qs("#trackResult");
+  const setupBox = qs("#databaseSetupWarning");
+  if (!form || !resultBox) return;
+
+  if (!databaseReady() && setupBox) {
+    setupBox.classList.remove("hidden");
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!databaseReady()) {
+      resultBox.innerHTML = `<div class="track-card error"><strong>Tracking is not connected yet.</strong><p>Please add the Google Apps Script URL in app.js first.</p></div>`;
+      return;
+    }
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) submitButton.disabled = true;
+    resultBox.innerHTML = `<div class="track-card"><strong>Checking order status...</strong></div>`;
+    try {
+      const data = formDataObject(form);
+      const result = await loadJsonp(CONFIG.googleScriptUrl, {
+        action: "track",
+        orderId: clean(data.orderId),
+        phone: clean(data.phone)
+      });
+      renderTrackingResult(resultBox, result);
+    } catch (error) {
+      resultBox.innerHTML = `<div class="track-card error"><strong>Could not check status.</strong><p>Please try again or contact the company.</p></div>`;
+    }
+    if (submitButton) submitButton.disabled = false;
+  });
+}
+
 function setupQuickActions() {
   const callNow = qs("#callNow");
   if (callNow) callNow.href = `tel:${CONFIG.callNumber}`;
@@ -274,3 +423,4 @@ setupRestaurantOptions();
 setupForms();
 setupLocationButtons();
 setupQuickActions();
+setupTrackingForm();
