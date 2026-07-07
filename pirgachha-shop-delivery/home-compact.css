@@ -94,6 +94,14 @@
   .center-title {
     margin-bottom: 10px !important;
   }
+
+  .home-info .compact-actions {
+    order: 1 !important;
+  }
+
+  .home-info .status-card {
+    order: 2 !important;
+  }
 }
 
 @media (max-width: 390px) {
